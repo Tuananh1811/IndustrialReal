@@ -16,6 +16,7 @@ class Login extends Component {
             errMessage:''
         }
     }
+    //
     handleOnChangeUserName = (event) => {
         this.setState({
             username:event.target.value
@@ -38,7 +39,7 @@ class Login extends Component {
             })
           }
           if(data && data.errCode===0){
-            // eslint-disable-next-line no-undef
+            // eslint-disable-next-line no-undef 
            this.props.userLoginSuccess(data.user);
             console.log("success");
           }
@@ -50,7 +51,7 @@ class Login extends Component {
                     })
                 }
             }
-        } 
+        }//
     }
     render() {
         //JSX

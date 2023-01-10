@@ -1,20 +1,72 @@
 import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
+import './UserManage.scss';
+import { getAllUsers } from "../../services/userService"; //import function
 class UserManage extends Component {
 
-    state = {
+    constructor(props) {
+        super(props);
+        this.state = {
+            arrUsers: []
+        }
+    }
+
+    async componentDidMount() {
+        let response = await getAllUsers('ALL');
+        if (response && response.errCode === 0) {
+            this.setState({
+                arrUsers: response.users
+            })
+        }
 
     }
 
-    componentDidMount() {
-
-    }
-
-
+    /** life cycle
+     * run component
+     * 1.run contructor ->init state
+     * 2.did mount (muốn gán giá trị cho state)
+     * 3.render
+     */
     render() {
+        // console.log('check render',this.state)
+        let arrUsers = this.state.arrUsers;
         return (
-            <div className="text-center">Manage users</div>
+            <div className="users-contaner">
+                <div className='title text-center'>
+                    Manage users
+
+                </div>
+                <div className='users-table mt-3 mx-1'>
+                    <table id="customers">
+                        <tr>
+                            <th>Email</th>
+                            <th>First name</th>
+                            <th>Last name</th>
+                            <th>Address</th>
+                            <th>Action</th>
+                        </tr>
+
+                        {
+                            arrUsers && arrUsers.map((item, index) => {
+                                return (
+                                    <tr>
+                                        <td>{item.email}</td>
+                                        <td>{item.firstName}</td>
+                                        <td>{item.lastName}</td>
+                                        <td>{item.address}</td>
+                                        <td>
+                                            <button  className='btn-edit'><i className="fas fa-pencil-alt"></i></button>
+                                            <button  className='btn-delete'><i className="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                )
+                            })
+
+                        }
+                    </table>
+                </div>
+            </div>
         );
     }
 
