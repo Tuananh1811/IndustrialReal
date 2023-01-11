@@ -59,3 +59,13 @@
         transition      : all .3s;
     }
 }
+
+.modal-user-container{
+    .close{
+        border: none !important;
+        outline: none !important;
+        background-color: transparent !important;
+        color: #fff !important;
+        font-size: 30px;
+    }
+}
