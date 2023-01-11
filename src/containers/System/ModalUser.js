@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
-import { Form, FormControl, Label, Input, FormText, FormGroup, Button, Modal, ModalHeader, ModalBody, ModalFooter, Row } from 'reactstrap';
+import { Form, FormControl, Label, Input, FormGroup, Button, Modal, ModalHeader, ModalBody, ModalFooter, Row } from 'reactstrap';
 class ModalUser extends Component {
     constructor(props) {
         super(props);
@@ -24,8 +24,17 @@ class ModalUser extends Component {
         this.props.toggleFromParent();
     }
     handleOnChangeInput = (event,id) => {
-        //bad code
         
+        //good code
+        let copyState={...this.state};//copy state
+        copyState[id]=event.target.value;
+        this.setState({
+            ...copyState
+        },()=>{
+            console.log("check good state",this.state)
+        })
+        console.log("copy state: ",copyState);
+
         console.log(event.target.value,id);
     }
     render() {
