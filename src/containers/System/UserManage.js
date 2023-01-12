@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import './UserManage.scss';
-import { getAllUsers } from "../../services/userService"; //import function
+import { getAllUsers, createNewUserService, deleteUserService } from "../../services/userService"; //import function
 import ModalUser from './ModalUser';
-
+import {emitter} from '../../utils/emitter';
 
 class UserManage extends Component {
 
@@ -15,8 +15,10 @@ class UserManage extends Component {
             isOpenModalUser: false
         }
     }
-
     async componentDidMount() {
+        await this.getAllUserFromReact();
+    }
+    getAllUserFromReact = async () => {
         let response = await getAllUsers('ALL');
         if (response && response.errCode === 0) {
             this.setState({
@@ -34,6 +36,39 @@ class UserManage extends Component {
             isOpenModalUser: !this.state.isOpenModalUser
         })
     }
+    createNewUser = async (data) => {
+        try {
+            let response = await createNewUserService(data);
+            if (response && response.errCode !== 0) {
+                alert(response.errMessage);
+            }
+            else {
+                await this.getAllUserFromReact();
+                this.setState({
+                    isOpenModalUser: false,
+
+                })
+                emitter.emit('EVENT_CLEAR_MODAL_DATA',{'id':'your id'});
+            }
+        } catch (e) {
+            console.log(e);
+        }
+
+    }
+    handleDeleteUser = async (user) => {
+        try {
+            let response = await deleteUserService(user.id);
+            console.log(response);
+            if (response && response.errCode === 0) {
+                this.getAllUserFromReact();
+            }else{
+                alert(response.errMessage)
+            }
+        } catch (e) {
+            alert(e);
+
+        }
+    }
     /** life cycle
      * run component
      * 1.run contructor ->init state
@@ -41,7 +76,7 @@ class UserManage extends Component {
      * 3.render
      */
     render() {
-        // console.log('check render',this.state)
+
         let arrUsers = this.state.arrUsers;
         return (
 
@@ -49,6 +84,7 @@ class UserManage extends Component {
                 <ModalUser
                     isOpen={this.state.isOpenModalUser}
                     toggleFromParent={this.toggleUserModal}
+                    createNewUser={this.createNewUser}
                 />
                 <div className='title text-center'>Manage users</div>
                 <div className='mx-1'>
@@ -67,6 +103,7 @@ class UserManage extends Component {
                                 <th>First name</th>
                                 <th>Last name</th>
                                 <th>Address</th>
+                                <th>Company</th>
                                 <th>Action</th>
                             </tr>
 
@@ -78,9 +115,11 @@ class UserManage extends Component {
                                             <td>{item.firstName}</td>
                                             <td>{item.lastName}</td>
                                             <td>{item.address}</td>
+                                            <td>{item.companyName}</td>
+
                                             <td>
                                                 <button className='btn-edit'><i className="fas fa-pencil-alt"></i></button>
-                                                <button className='btn-delete'><i className="fas fa-trash"></i></button>
+                                                <button className='btn-delete' onClick={() => this.handleDeleteUser(item)}><i className="fas fa-trash"></i></button>
                                             </td>
                                         </tr>
                                     )
