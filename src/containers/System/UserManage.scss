@@ -60,12 +60,17 @@
     }
 }
 
-.modal-user-container{
-    .close{
-        border: none !important;
-        outline: none !important;
+.modal-user-container {
+    .close {
+        border          : none !important;
+        outline         : none !important;
         background-color: transparent !important;
-        color: #fff !important;
-        font-size: 30px;
+        color           : #fff !important;
+        font-size       : 30px;
+    }
+
+    .required-icon {
+        color      : red;
+        margin-left: 3px;
     }
 }

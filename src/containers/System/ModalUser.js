@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { FormattedMessage } from 'react-intl';
+//import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
-import { Form, FormControl, Label, Input, FormGroup, Button, Modal, ModalHeader, ModalBody, ModalFooter, Row } from 'reactstrap';
+import { Form, Label, Input, FormGroup, Button, Modal, ModalHeader, ModalBody, ModalFooter, Row } from 'reactstrap';
 import { emitter } from '../../utils/emitter';
 
 class ModalUser extends Component {
@@ -33,7 +33,6 @@ class ModalUser extends Component {
                 companyName: '',
                 roleId: ''
             })
-
         })
     }
     componentDidMount() {
@@ -85,16 +84,17 @@ class ModalUser extends Component {
                     <Form>
                         <Row className='mb-3' xs="2">
                             <FormGroup>
-                                <Label >First name</Label>
+                                <Label >First name<span className='required-icon'>*</span></Label>
                                 <Input
                                     type='text'
                                     name="firstName"
                                     value={this.state.firstName}
                                     onChange={(event) => this.handleOnChangeInput(event, "firstName")}
                                 />
+                                
                             </FormGroup>
                             <FormGroup>
-                                <Label >Last name</Label>
+                                <Label >Last name<span className='required-icon'>*</span></Label>
                                 <Input
                                     type='text'
                                     name="lastName"
@@ -105,7 +105,7 @@ class ModalUser extends Component {
                         </Row>
 
                         <FormGroup className='mb-3'>
-                            <Label for="exampleEmail">Email</Label>
+                            <Label for="exampleEmail">Email<span className='required-icon'>*</span></Label>
                             <Input
                                 id="exampleEmail"
                                 name="email"
@@ -116,7 +116,7 @@ class ModalUser extends Component {
                         </FormGroup>
 
                         <FormGroup className='mb-3'>
-                            <Label for="examplePassword">Password</Label>
+                            <Label for="examplePassword">Password<span className='required-icon'>*</span></Label>
                             <Input
                                 id="examplePassword"
                                 name="password"

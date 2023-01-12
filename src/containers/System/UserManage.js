@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FormattedMessage } from 'react-intl';
+//import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import './UserManage.scss';
 import { getAllUsers, createNewUserService, deleteUserService } from "../../services/userService"; //import function
@@ -46,14 +46,12 @@ class UserManage extends Component {
                 await this.getAllUserFromReact();
                 this.setState({
                     isOpenModalUser: false,
-
                 })
                 emitter.emit('EVENT_CLEAR_MODAL_DATA',{'id':'your id'});
             }
         } catch (e) {
             console.log(e);
         }
-
     }
     handleDeleteUser = async (user) => {
         try {
