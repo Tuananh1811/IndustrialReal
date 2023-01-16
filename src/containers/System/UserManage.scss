@@ -1,5 +1,6 @@
 .users-table {
     overflow: auto;
+    max-height: 700px;
 
     #customers {
         font-family    : Arial, Helvetica, sans-serif;
@@ -7,10 +8,11 @@
         width          : 100%;
         text-overflow  : ellipsis;
         white-space    : nowrap;
-        // min-width      : 400px;
-        // overflow       : auto;
+        
     }
-
+    /**
+        xem ra 
+    */
     #customers td,
     #customers th {
         border : 1px solid #ddd;
@@ -65,20 +67,19 @@
             color           : #fff;
             transition      : all .3s;
         }
+    }  
+}
+.modal-user-container {
+    .close {
+        border          : none !important;
+        outline         : none !important;
+        background-color: transparent !important;
+        color           : #fff !important;
+        font-size       : 30px;
     }
 
-    .modal-user-container {
-        .close {
-            border          : none !important;
-            outline         : none !important;
-            background-color: transparent !important;
-            color           : #fff !important;
-            font-size       : 30px;
-        }
-
-        .required-icon {
-            color      : red;
-            margin-left: 3px;
-        }
+    .required-icon {
+        color      : red !important;
+        margin-left: 3px;
     }
 }

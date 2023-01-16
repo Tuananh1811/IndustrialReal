@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 //import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { Form, Label, Input, FormGroup, Button, Modal, ModalHeader, ModalBody, ModalFooter, Row } from 'reactstrap';
-import { emitter } from '../../utils/emitter';
+import _ from 'lodash';
 
-class ModalUser extends Component {
+class ModalEditUser extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            id:'',
             email: '',
             password: '',
             firstName: '',
@@ -18,31 +19,31 @@ class ModalUser extends Component {
             companyName: '',
             roleId: ''
         }
-        this.listenToEmitter();
+
     }
-    listenToEmitter() {
-        emitter.on('EVENT_CLEAR_MODAL_DATA', () => {
-            this.setState({
-                email: '',
-                password: '',
-                firstName: '',
-                lastName: '',
-                phoneNumber: '',
-                address: '',
-                gender: '',
-                companyName: '',
-                roleId: ''
-            })
-        })
-    }
+
     componentDidMount() {
-        console.log("mounting modal");
+        // console.log("đimount edit",this.props.currentUser);
+        let user = this.props.currentUser;
+        //  let {currentUser}=this.props;
+        if (user && !_.isEmpty(user)) {
+            this.setState({
+                id:user.id,
+                email: user.email,
+                password: "hashcode",
+                firstName: user.firstName,
+                lastName: user.lastName,
+                address: user.address,
+                companyName: user.companyName,
+                phoneNumber: user.phoneNumber
+            })
+        }
     }
     toggle = () => {
         this.props.toggleFromParent();
     }
     handleOnChangeInput = (event, id) => {
-        
+
         //good code
         let copyState = { ...this.state };//copy state
         copyState[id] = event.target.value;
@@ -64,14 +65,15 @@ class ModalUser extends Component {
         }
         return isValid;
     }
-    handleAddNewUser = () => {
+    
+    handleSaveUser = () => {
         let isValid = this.checkValidInput();
         if (isValid === true) {
-            this.props.createNewUser(this.state);
+            this.props.editUser(this.state);
         }
     }
     render() {
-
+        console.log(this.props);
         return (
             <Modal
                 isOpen={this.props.isOpen}
@@ -79,9 +81,31 @@ class ModalUser extends Component {
                 className={'modal-user-container'}
                 size="lg"
             >
-                <ModalHeader toggle={() => { this.toggle() }}>Create a new user</ModalHeader>
+                <ModalHeader toggle={() => { this.toggle() }}>Edit a user</ModalHeader>
                 <ModalBody>
                     <Form>
+                        <FormGroup className='mb-3'>
+                            <Label for="exampleEmail">Email<span className='required-icon'>*</span></Label>
+                            <Input
+                                id="exampleEmail"
+                                name="email"
+                                value={this.state.email}
+                                onChange={(event) => this.handleOnChangeInput(event, "email")}
+                                type="email"
+                                disabled
+                            />
+                        </FormGroup>
+                        <FormGroup className='mb-3'>
+                            <Label for="examplePassword">Password<span className='required-icon'>*</span></Label>
+                            <Input
+                                id="examplePassword"
+                                name="password"
+                                onChange={(event) => this.handleOnChangeInput(event, "password")}
+                                type="password"
+                                value={this.state.password}
+                                disabled
+                            />
+                        </FormGroup>
                         <Row className='mb-3' xs="2">
                             <FormGroup>
                                 <Label >First name<span className='required-icon'>*</span></Label>
@@ -91,7 +115,7 @@ class ModalUser extends Component {
                                     value={this.state.firstName}
                                     onChange={(event) => this.handleOnChangeInput(event, "firstName")}
                                 />
-                                
+
                             </FormGroup>
                             <FormGroup>
                                 <Label >Last name<span className='required-icon'>*</span></Label>
@@ -104,27 +128,9 @@ class ModalUser extends Component {
                             </FormGroup>
                         </Row>
 
-                        <FormGroup className='mb-3'>
-                            <Label for="exampleEmail">Email<span className='required-icon'>*</span></Label>
-                            <Input
-                                id="exampleEmail"
-                                name="email"
-                                value={this.state.email}
-                                onChange={(event) => this.handleOnChangeInput(event, "email")}
-                                type="email"
-                            />
-                        </FormGroup>
 
-                        <FormGroup className='mb-3'>
-                            <Label for="examplePassword">Password<span className='required-icon'>*</span></Label>
-                            <Input
-                                id="examplePassword"
-                                name="password"
-                                onChange={(event) => this.handleOnChangeInput(event, "password")}
-                                type="password"
-                                value={this.state.password}
-                            />
-                        </FormGroup>
+
+                        
 
                         <Row className='mb-3' xs="2">
                             <FormGroup>
@@ -146,7 +152,7 @@ class ModalUser extends Component {
                             </FormGroup>
                         </Row>
 
-                        <Row className='mb-3' xs="3">
+                        <Row className='mb-3' >
                             <FormGroup>
                                 <Label >Company</Label>
                                 <Input
@@ -155,44 +161,8 @@ class ModalUser extends Component {
                                     value={this.state.companyName}
                                     onChange={(event) => this.handleOnChangeInput(event, "companyName")} />
                             </FormGroup>
-                            <FormGroup>
-                                <Label for="exampleSelect">Sex</Label>
-                                <Input
-                                    id="exampleSelect"
-                                    name="gender"
-                                    type="select"
-                                    value={this.state.gender}
-                                    onChange={(event) => this.handleOnChangeInput(event, "gender")}
-                                >
-                                    <option>----</option>
-                                    <option value="1" >
-                                        Male
-                                    </option>
-                                    <option value="0">
-                                        Female
-                                    </option>
 
-                                </Input>
-                            </FormGroup>
 
-                            <FormGroup>
-                                <Label for="exampleSelect">Role</Label>
-                                <Input
-                                    id="exampleSelect"
-                                    name="roleId"
-                                    type="select"
-                                    value={this.state.roleId}
-                                    onChange={(event) => this.handleOnChangeInput(event, "roleId")}
-                                >
-                                    <option>----</option>
-                                    <option value="1">
-                                        Admin
-                                    </option>
-                                    <option value="2">
-                                        Employee
-                                    </option>
-                                </Input>
-                            </FormGroup>
                         </Row>
                         <br />
                     </Form>
@@ -200,8 +170,8 @@ class ModalUser extends Component {
                 <ModalFooter>
 
                     <Button className='px-3' color="primary"
-                        onClick={() => { this.handleAddNewUser() }}>
-                        Add new
+                        onClick={() => { this.handleSaveUser() }}>
+                        Save changes
                     </Button>{' '}
                     <Button className='px-3' color="secondary" onClick={() => { this.toggle() }}>
                         Close
@@ -223,7 +193,7 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(ModalUser);
+export default connect(mapStateToProps, mapDispatchToProps)(ModalEditUser);
 
 
 
