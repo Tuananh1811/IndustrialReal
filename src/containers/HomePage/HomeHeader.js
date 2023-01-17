@@ -17,10 +17,25 @@ class HomeHeader extends Component {
                         </div>
                     </div>
                     <div className='center-content'>
-                        b
+                        <div className='child-content'>
+                            <div><b>Bất động sản</b></div>
+                            <div><span className='sub-title'>Tìm dự án theo loại </span></div>
+                        </div>
+                        <div className='child-content'>
+                            <div><b>Dự án</b></div>
+                            <div><span className='sub-title'>Chọn dự án có sẵn</span></div>
+                        </div>
+                        <div className='child-content'>
+                            <div><b>Tư vấn</b></div>
+                            <div><span className='sub-title'>Chọn nhân viên tư vấn </span></div>
+                        </div>
+                        <div className='child-content'>
+                            <div><b>Gói tư vấn</b></div>
+                            <div><span className='sub-title'>Tư vấn tổng quát</span></div>
+                        </div>
                     </div>
                     <div className='right-content'>
-                        c
+                    <i class="fas fa-question"></i> Hỏi đáp
                     </div>
 
                 </div>
