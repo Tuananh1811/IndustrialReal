@@ -64,7 +64,6 @@ class UserManage extends Component {
     handleDeleteUser = async (user) => {
         try {
             let response = await deleteUserService(user.id);
-            console.log(response);
             if (response && response.errCode === 0) {
                 this.getAllUserFromReact();
             } else {
@@ -76,15 +75,27 @@ class UserManage extends Component {
         }
     }
     handleEditUser = async (user) => {
-        console.log("check edit user", user);
         this.setState({
             isOpenModalEditUser: true,
             userEdit: user
         })
     }
     doEditUser = async (user) => {
-        let res= await editUserService(user);
-        console.log(res);
+        try{
+            let res= await editUserService(user);
+           if(res&& res.errCode===0){
+            this.setState({
+                isOpenModalEditUser:false
+            })
+            await this.getAllUserFromReact();
+           }
+           else{
+            alert(res.errCode);
+           }
+        }catch(e){
+console.log(e);
+        }
+        
     }
     /** life cycle
      * run component

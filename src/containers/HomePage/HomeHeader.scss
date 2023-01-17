@@ -1,0 +1,40 @@
+.home-header-container {
+    width : 100%;
+    height: 100px;
+    .home-header-content {
+        width  : 90%;
+        margin : 0 auto;
+        display: flex;
+        height : 100%;
+        .left-content {
+            width          : 30%;
+            height         : 100%;
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+            i{
+                font-size: 30px;
+                cursor: pointer;
+            }
+            &:hover{
+                color:#EF5924 !important ;
+                transition: all .3s;
+            }
+            .header-logo {
+                background-image : url('../../assets/images/LOGO-png.png');
+                height           : 100%;
+                background-repeat: no-repeat;
+                background-size  : cover;
+                width            : 100%;
+            }
+        }
+
+        .center-content {
+            width           : 40%;
+        }
+
+        .right-content {
+            width           : 30%;
+        }
+    }
+}

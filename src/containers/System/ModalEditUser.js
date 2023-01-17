@@ -106,6 +106,11 @@ class ModalEditUser extends Component {
                                 disabled
                             />
                         </FormGroup>
+                         <FormGroup>
+                            <Label>
+                                
+                            </Label>
+                         </FormGroup>  
                         <Row className='mb-3' xs="2">
                             <FormGroup>
                                 <Label >First name<span className='required-icon'>*</span></Label>
@@ -127,11 +132,7 @@ class ModalEditUser extends Component {
                                 />
                             </FormGroup>
                         </Row>
-
-
-
-                        
-
+                       
                         <Row className='mb-3' xs="2">
                             <FormGroup>
                                 <Label >Phonenumber</Label>
@@ -161,8 +162,6 @@ class ModalEditUser extends Component {
                                     value={this.state.companyName}
                                     onChange={(event) => this.handleOnChangeInput(event, "companyName")} />
                             </FormGroup>
-
-
                         </Row>
                         <br />
                     </Form>
@@ -180,7 +179,6 @@ class ModalEditUser extends Component {
             </Modal>
         )
     }
-
 }
 
 const mapStateToProps = state => {
