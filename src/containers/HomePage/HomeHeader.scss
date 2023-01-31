@@ -2,6 +2,7 @@
     width : 100%;
     height: 100px;
 
+    //
     .home-header-content {
         width  : 85%;
         margin : 0 auto;
@@ -45,23 +46,113 @@
                 width          : 25%;
                 display        : flex;
                 flex-direction : column;
-                justify-content: center;
+                justify-content: flex-end;
                 height         : 100%;
                 text-align     : left;
-                padding:10px 10px ;
+                padding        : 10px 35px;
 
                 .sub-title {
-                    font-size: 13px;
-                    color    : gray;
+                    font-size  : 13px;
+                    color      : gray;
+                    font-weight: 400;
+                    //
                 }
             }
         }
 
         .right-content {
-            width: 20%;
-            display: flex;
+            width          : 20%;
+            display        : flex;
             justify-content: flex-end;
-            align-items: center;
+            align-items    : center;
+
+            .support,
+            .flag {
+                padding: 0px 10px;
+            }
         }
     }
+}
+
+.home-header-banner {
+    background-image   : url('../../assets/images/DJI_0766-1.jpg');
+    height             : auto;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    width              : 100%;
+    background-position: center;
+    position           : relative;
+
+    .home-header-banner-content {
+
+        height        : auto;
+        width         : 100%;
+        margin-right  : auto;
+        margin-left   : auto;
+        padding-top   : 100px;
+        padding-bottom: 150px;
+
+
+        text-align: center;
+
+        .title1 {
+
+            font-size     : 34px;
+            text-shadow   : 1px 1px 1px #333;
+            color         : #fff;
+            text-transform: uppercase;
+        }
+
+        .title2 {
+            font-size     : 36px;
+            text-shadow   : 1px 1px 1px #333;
+            color         : #fff;
+            text-transform: uppercase;
+            font-weight   : bold;
+
+        }
+
+        .search {
+            
+            background   : #EF5924;
+            color        : #fff;
+            outline      : none;
+            border-radius: 25px;
+            border       : 1px solid transparent;
+
+            height       : 50px;
+            padding-left : 50px;
+            padding-right: 25px;
+            display      : flex;
+            width        : 25%;
+            align-items  : center;
+            margin       : 30px auto;
+
+            .search-input {
+                background  : transparent;
+                outline     : none;
+                border      : none;
+                width       : 100%;
+                padding-left: 20px;
+
+            }
+
+            .search-input::placeholder {
+                color: #fff !important;
+            }
+        }
+
+    }
+
+    .options {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
+        padding-top     : 30px;
+        padding-bottom  : 20px;
+
+    }
+
+
+
+
+
 }
