@@ -30,10 +30,11 @@
 
             .header-logo {
                 background-image : url('../../assets/images/LOGO-png.png');
-                height           : 100%;
+                height           : 85%;
                 background-repeat: no-repeat;
-                background-size  : cover;
-                width            : 100%;
+                background-size  : 100%;
+                width            : 70%;
+               
             }
         }
 
@@ -54,14 +55,14 @@
                 .child-content-link {
                     text-decoration: none;
                     color          : #000;
-                    font-size      : 16px;
+                    font-size      : 17px;
 
                     &:hover {
                         color: #EF5924;
                     }
 
                     .sub-title {
-                        font-size  : 13px;
+                        font-size  : 14px;
                         color      : gray;
                         font-weight: 400;
                         //
@@ -80,13 +81,22 @@
             .support,
             .flag {
                 padding: 0px 10px;
+                a{
+                    color: #000;
+                    text-decoration: none;
+                    &:hover{
+                        color: #EF5924 !important;
+                    }
+                }
+               
             }
         }
     }
 }
 
 .home-header-banner {
-    background-image   : url('../../assets/images/DJI_0766-1.jpg');
+    background-image   : url('../../assets/images/DJI_0766-1.jpg')
+    ,linear-gradient(rgba(0, 0, 0, 0.25),rgba(255, 255, 255, 0.1));;
     height             : auto;
     background-repeat  : no-repeat;
     background-size    : cover;
@@ -102,8 +112,6 @@
         margin-left   : auto;
         padding-top   : 100px;
         padding-bottom: 150px;
-
-
         text-align: center;
 
         .title1 {
@@ -120,7 +128,6 @@
             color         : #fff;
             text-transform: uppercase;
             font-weight   : bold;
-
         }
 
         .search {
@@ -130,7 +137,6 @@
             outline      : none;
             border-radius: 25px;
             border       : 1px solid transparent;
-
             height       : 50px;
             padding-left : 50px;
             padding-right: 25px;
@@ -145,7 +151,6 @@
                 border      : none;
                 width       : 100%;
                 padding-left: 20px;
-
             }
 
             .search-input::placeholder {
@@ -175,7 +180,6 @@
 
                 .option-child-item-link {
                     min-width: 180px;
-
                     text-align     : center;
                     padding        : 5px 5px;
                     color          : #333;
@@ -189,9 +193,6 @@
                     }
 
                     .option-child-icon {
-                        // background         : #fff;
-                        // border-radius      : 50%;
-
                         margin             : 2px auto;
                         background-size    : 32px;
                         background-repeat  : no-repeat;

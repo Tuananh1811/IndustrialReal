@@ -19,39 +19,43 @@ class HomeHeader extends Component {
                         </div>
                         <div className='center-content'>
                             <div className='child-content'>
-                                <a className='child-content-link' href='#'>
+                                <a className='child-content-link' href='/'>
                                     <div><b>Bất động sản</b></div>
                                     <div><span className='sub-title'>Tìm dự án theo loại </span></div>
                                 </a>
 
                             </div>
                             <div className='child-content'>
-                                <a className='child-content-link' href='#'>
+                                <a className='child-content-link' href='/'>
                                     <div><b>Dự án</b></div>
                                     <div><span className='sub-title'>Chọn dự án có sẵn</span></div>
                                 </a>
 
                             </div>
                             <div className='child-content'>
-                                <a className='child-content-link' href='#'>
-                                    <div><b>Tư vấn</b></div>
-                                    <div><span className='sub-title'>Chọn nhân viên tư vấn </span></div>
+                                <a className='child-content-link' href='/'>
+                                    <div><b>Tin tức</b></div>
+                                    <div><span className='sub-title'>Tin tức bất động sản </span></div>
                                 </a>
 
                             </div>
                             <div className='child-content'>
-                                <a className='child-content-link' href='#'><div><b>Gói tư vấn</b></div>
-                                    <div><span className='sub-title'>Tư vấn tổng quát</span></div></a>
+                                <a className='child-content-link' href='/'><div><b>Liên hệ</b></div>
+                                    <div><span className='sub-title'>Liên hệ tư vấn</span></div></a>
 
                             </div>
                         </div>
                         <div className='right-content'>
                             <div className='support'>
-                                <i class="fas fa-question"></i> Hỏi đáp
+                                <a href='/'> <i class="fas fa-question"></i> Hỏi đáp</a>
+
                             </div>
 
                             <div className='flag'>
-                                VN
+                                <a href='/'>
+                                    VN
+                                </a>
+
                             </div>
                         </div>
 
@@ -71,7 +75,7 @@ class HomeHeader extends Component {
                     <div className='options'>
                         <div className='option-child'>
                             <div className='option-child-item'>
-                                <a href='#' className='option-child-item-link'>
+                                <a href='/' className='option-child-item-link'>
                                     <div className='option-child-icon'>
                                         <i className="fas fa-building"></i>
                                     </div>
@@ -80,7 +84,7 @@ class HomeHeader extends Component {
 
                             </div>
                             <div className='option-child-item'>
-                                <a href='#' className='option-child-item-link'>
+                                <a href='/' className='option-child-item-link'>
                                     <div className='option-child-icon'>
                                         <i className="fas fa-industry"></i>
                                     </div>
@@ -89,7 +93,7 @@ class HomeHeader extends Component {
 
                             </div>
                             <div className='option-child-item'>
-                                <a href='#' className='option-child-item-link'>
+                                <a href='/' className='option-child-item-link'>
                                     <div className='option-child-icon'>
                                         <i className="fas fa-building"></i>
                                     </div>
@@ -98,7 +102,7 @@ class HomeHeader extends Component {
 
                             </div>
                             <div className='option-child-item'>
-                                <a href='#' className='option-child-item-link'>
+                                <a href='/' className='option-child-item-link'>
                                     <div className='option-child-icon'>
                                         <i className="fas fa-sitemap"></i>
                                     </div>
@@ -107,7 +111,7 @@ class HomeHeader extends Component {
 
                             </div>
                             <div className='option-child-item'>
-                                <a href='#' className='option-child-item-link'>
+                                <a href='/' className='option-child-item-link'>
                                     <div className='option-child-icon'>
                                         <i className="fas fa-building"></i>
                                     </div>
@@ -116,7 +120,7 @@ class HomeHeader extends Component {
 
                             </div>
                             <div className='option-child-item'>
-                                <a href='#' className='option-child-item-link'>
+                                <a href='/' className='option-child-item-link'>
                                     <div className='option-child-icon'>
                                         <i className="fas fa-building"></i>
                                     </div>
@@ -125,7 +129,7 @@ class HomeHeader extends Component {
 
                             </div>
                             <div className='option-child-item'>
-                                <a href='#' className='option-child-item-link'>
+                                <a href='/' className='option-child-item-link'>
                                     <div className='option-child-icon'>
                                         <i className="fas fa-building"></i>
                                     </div>
@@ -134,7 +138,7 @@ class HomeHeader extends Component {
 
                             </div>
                             <div className='option-child-item'>
-                                <a href='#' className='option-child-item-link'>
+                                <a href='/' className='option-child-item-link'>
                                     <div className='option-child-icon'>
                                         <i className="fas fa-building"></i>
                                     </div>
