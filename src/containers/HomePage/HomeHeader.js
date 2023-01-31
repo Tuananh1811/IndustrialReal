@@ -19,20 +19,30 @@ class HomeHeader extends Component {
                         </div>
                         <div className='center-content'>
                             <div className='child-content'>
-                                <div><b>Bất động sản</b></div>
-                                <div><span className='sub-title'>Tìm dự án theo loại </span></div>
+                                <a className='child-content-link' href='#'>
+                                    <div><b>Bất động sản</b></div>
+                                    <div><span className='sub-title'>Tìm dự án theo loại </span></div>
+                                </a>
+
                             </div>
                             <div className='child-content'>
-                                <div><b>Dự án</b></div>
-                                <div><span className='sub-title'>Chọn dự án có sẵn</span></div>
+                                <a className='child-content-link' href='#'>
+                                    <div><b>Dự án</b></div>
+                                    <div><span className='sub-title'>Chọn dự án có sẵn</span></div>
+                                </a>
+
                             </div>
                             <div className='child-content'>
-                                <div><b>Tư vấn</b></div>
-                                <div><span className='sub-title'>Chọn nhân viên tư vấn </span></div>
+                                <a className='child-content-link' href='#'>
+                                    <div><b>Tư vấn</b></div>
+                                    <div><span className='sub-title'>Chọn nhân viên tư vấn </span></div>
+                                </a>
+
                             </div>
                             <div className='child-content'>
-                                <div><b>Gói tư vấn</b></div>
-                                <div><span className='sub-title'>Tư vấn tổng quát</span></div>
+                                <a className='child-content-link' href='#'><div><b>Gói tư vấn</b></div>
+                                    <div><span className='sub-title'>Tư vấn tổng quát</span></div></a>
+
                             </div>
                         </div>
                         <div className='right-content'>
@@ -59,12 +69,85 @@ class HomeHeader extends Component {
 
                     </div>
                     <div className='options'>
-                        <ul className=''>
-                            <li><a href='#'>1</a></li>
-                            <li><a href='#'>2</a></li>
-                            <li><a href='#'>3</a></li>
-                            <li><a href='#'>4</a></li>
-                        </ul>
+                        <div className='option-child'>
+                            <div className='option-child-item'>
+                                <a href='#' className='option-child-item-link'>
+                                    <div className='option-child-icon'>
+                                        <i className="fas fa-building"></i>
+                                    </div>
+                                    <div className='option-child-text'>Chung cư</div>
+                                </a>
+
+                            </div>
+                            <div className='option-child-item'>
+                                <a href='#' className='option-child-item-link'>
+                                    <div className='option-child-icon'>
+                                        <i className="fas fa-industry"></i>
+                                    </div>
+                                    <div className='option-child-text'>Đất công nghiệp</div>
+                                </a>
+
+                            </div>
+                            <div className='option-child-item'>
+                                <a href='#' className='option-child-item-link'>
+                                    <div className='option-child-icon'>
+                                        <i className="fas fa-building"></i>
+                                    </div>
+                                    <div className='option-child-text'>Thuê nhà máy</div>
+                                </a>
+
+                            </div>
+                            <div className='option-child-item'>
+                                <a href='#' className='option-child-item-link'>
+                                    <div className='option-child-icon'>
+                                        <i className="fas fa-sitemap"></i>
+                                    </div>
+                                    <div className='option-child-text'>Dự án</div>
+                                </a>
+
+                            </div>
+                            <div className='option-child-item'>
+                                <a href='#' className='option-child-item-link'>
+                                    <div className='option-child-icon'>
+                                        <i className="fas fa-building"></i>
+                                    </div>
+                                    <div className='option-child-text'>Chung cư</div>
+                                </a>
+
+                            </div>
+                            <div className='option-child-item'>
+                                <a href='#' className='option-child-item-link'>
+                                    <div className='option-child-icon'>
+                                        <i className="fas fa-building"></i>
+                                    </div>
+                                    <div className='option-child-text'>Chung cư</div>
+                                </a>
+
+                            </div>
+                            <div className='option-child-item'>
+                                <a href='#' className='option-child-item-link'>
+                                    <div className='option-child-icon'>
+                                        <i className="fas fa-building"></i>
+                                    </div>
+                                    <div className='option-child-text'>Chung cư</div>
+                                </a>
+
+                            </div>
+                            <div className='option-child-item'>
+                                <a href='#' className='option-child-item-link'>
+                                    <div className='option-child-icon'>
+                                        <i className="fas fa-building"></i>
+                                    </div>
+                                    <div className='option-child-text'>Chung cư</div>
+                                </a>
+
+                            </div>
+
+
+
+
+
+                        </div>
                     </div>
                 </div>
 

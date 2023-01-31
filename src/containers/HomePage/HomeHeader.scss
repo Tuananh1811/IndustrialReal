@@ -38,7 +38,7 @@
         }
 
         .center-content {
-            width      : 50%;
+            width      : 55%;
             display    : flex;
             align-items: center;
 
@@ -51,17 +51,28 @@
                 text-align     : left;
                 padding        : 10px 35px;
 
-                .sub-title {
-                    font-size  : 13px;
-                    color      : gray;
-                    font-weight: 400;
-                    //
+                .child-content-link {
+                    text-decoration: none;
+                    color          : #000;
+                    font-size      : 16px;
+
+                    &:hover {
+                        color: #EF5924;
+                    }
+
+                    .sub-title {
+                        font-size  : 13px;
+                        color      : gray;
+                        font-weight: 400;
+                        //
+                    }
                 }
+
             }
         }
 
         .right-content {
-            width          : 20%;
+            width          : 15%;
             display        : flex;
             justify-content: flex-end;
             align-items    : center;
@@ -113,7 +124,7 @@
         }
 
         .search {
-            
+
             background   : #EF5924;
             color        : #fff;
             outline      : none;
@@ -149,6 +160,62 @@
         padding-top     : 30px;
         padding-bottom  : 20px;
 
+        .option-child {
+            list-style     : none;
+            margin         : 0;
+            padding        : 0;
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+            flex-wrap      : wrap;
+
+            .option-child-item {
+                margin : 0;
+                padding: 5px;
+
+                .option-child-item-link {
+                    min-width: 180px;
+
+                    text-align     : center;
+                    padding        : 5px 5px;
+                    color          : #333;
+                    display        : inline-block;
+                    position       : relative;
+                    text-decoration: none;
+                    font-weight    : bold;
+
+                    &:hover {
+                        color: #EF5924;
+                    }
+
+                    .option-child-icon {
+                        // background         : #fff;
+                        // border-radius      : 50%;
+
+                        margin             : 2px auto;
+                        background-size    : 32px;
+                        background-repeat  : no-repeat;
+                        background-position: center;
+
+                        i {
+                            font-size       : 40px;
+                            color           : #FF5700;
+                            background-color: #fff;
+                            padding         : 15px 20px;
+                            border-radius   : 50%;
+                            box-shadow      : 2px 1px 2px 2px #ccc;
+
+                        }
+                    }
+
+                    .option-child-text {
+                        font-size  : 18px;
+                        margin-top : 10px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
     }
 
 
