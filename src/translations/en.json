@@ -1,9 +1,14 @@
 {
-    "homeheader":{
-        "property":"Property",
-        "findproperty":"Find property by type",
-        "project":"Project",
-        "findproject":"View existing projects"
+    "homeheader": {
+        "property": "Property",
+        "findproperty": "Find property by type",
+        "project": "Project",
+        "findproject": "View existing projects",
+        "news": "News",
+        "newproperty": "Real estate news",
+        "contact": "Contact",
+        "contactconsultant": "Contact a consultant",
+        "support": "Support"
     },
     "common": {
         "add": "Add",

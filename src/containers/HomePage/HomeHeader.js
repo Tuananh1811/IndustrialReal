@@ -35,20 +35,20 @@ class HomeHeader extends Component {
                             </div>
                             <div className='child-content'>
                                 <a className='child-content-link' href='/'>
-                                    <div><b>Tin tức</b></div>
-                                    <div><span className='sub-title'>Tin tức bất động sản </span></div>
+                                    <div><b><FormattedMessage id="homeheader.news"/></b></div>
+                                    <div><span className='sub-title'><FormattedMessage id="homeheader.newproperty"/> </span></div>
                                 </a>
 
                             </div>
                             <div className='child-content'>
-                                <a className='child-content-link' href='/'><div><b>Liên hệ</b></div>
-                                    <div><span className='sub-title'>Liên hệ tư vấn</span></div></a>
+                                <a className='child-content-link' href='/'><div><b><FormattedMessage id="homeheader.contact"/></b></div>
+                                    <div><span className='sub-title'><FormattedMessage id="homeheader.contactconsultant"/></span></div></a>
 
                             </div>
                         </div>
                         <div className='right-content'>
                             <div className='support'>
-                                <a href='/'> <i class="fas fa-question"></i> Hỏi đáp</a>
+                                <a href='/'> <i class="fas fa-question"></i><FormattedMessage id="homeheader.support"/> </a>
 
                             </div>
 

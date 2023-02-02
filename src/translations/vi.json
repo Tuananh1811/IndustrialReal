@@ -3,8 +3,12 @@
         "property":"Bất động sản",
         "findproperty":"Tìm dự án theo loại",
         "project":"Dự án",
-        "findproject":"Chọn dự án có sẵn"
-
+        "findproject":"Chọn dự án có sẵn",
+        "news":"Tin tức",
+        "newproperty":"Tin tức bất động sản",
+        "contact":"Liên hệ",
+        "contactconsultant":"Liên hệ tư vấn",
+        "support":" Hỏi đáp"
     },
     "common": {
         "add": "Thêm",
