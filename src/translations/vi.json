@@ -10,6 +10,17 @@
         "contactconsultant":"Liên hệ tư vấn",
         "support":" Hỏi đáp"
     },
+
+    "banner":{
+        "title1":"Tìm tài sản công nghiệp tiếp theo của bạn",
+        "title2":"Đất thương mại & phát triển",
+        "banneroption1":"Chung cư",
+        "banneroption2":"Đất công nghiệp",
+        "banneroption3":"Thuê nhà máy",
+        "banneroption4":"Dự án",
+        "banneroption5":"Chung cư",
+        "banneroption6":"Chung cư"
+    },
     "common": {
         "add": "Thêm",
         "edit": "Sửa",

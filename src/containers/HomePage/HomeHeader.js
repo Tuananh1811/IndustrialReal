@@ -65,8 +65,8 @@ class HomeHeader extends Component {
                 </div>
                 <div className='home-header-banner'>
                     <div className='home-header-banner-content'>
-                        <div className='title1'>Tìm tài sản công nghiệp tiếp theo của bạn</div>
-                        <div className='title2'>Đất thương mại & phát triển</div>
+                        <div className='title1'><FormattedMessage id="banner.title1"/></div>
+                        <div className='title2'><FormattedMessage id="banner.title2"/></div>
                         <div className='search'>
                             <i className="fas fa-search"></i>
                             <input id="timkiem_chung" className='search-input' type="search" placeholder="Tìm dự án"></input>
@@ -80,7 +80,7 @@ class HomeHeader extends Component {
                                     <div className='option-child-icon'>
                                         <i className="fas fa-building"></i>
                                     </div>
-                                    <div className='option-child-text'>Chung cư</div>
+                                    <div className='option-child-text'><FormattedMessage id="banner.banneroption1"/></div>
                                 </a>
 
                             </div>
@@ -89,7 +89,7 @@ class HomeHeader extends Component {
                                     <div className='option-child-icon'>
                                         <i className="fas fa-industry"></i>
                                     </div>
-                                    <div className='option-child-text'>Đất công nghiệp</div>
+                                    <div className='option-child-text'><FormattedMessage id="banner.banneroption2"/></div>
                                 </a>
 
                             </div>
@@ -98,7 +98,7 @@ class HomeHeader extends Component {
                                     <div className='option-child-icon'>
                                         <i className="fas fa-building"></i>
                                     </div>
-                                    <div className='option-child-text'>Thuê nhà máy</div>
+                                    <div className='option-child-text'><FormattedMessage id="banner.banneroption3"/></div>
                                 </a>
 
                             </div>
@@ -107,7 +107,7 @@ class HomeHeader extends Component {
                                     <div className='option-child-icon'>
                                         <i className="fas fa-sitemap"></i>
                                     </div>
-                                    <div className='option-child-text'>Dự án</div>
+                                    <div className='option-child-text'><FormattedMessage id="banner.banneroption4"/></div>
                                 </a>
 
                             </div>
@@ -116,7 +116,7 @@ class HomeHeader extends Component {
                                     <div className='option-child-icon'>
                                         <i className="fas fa-building"></i>
                                     </div>
-                                    <div className='option-child-text'>Chung cư</div>
+                                    <div className='option-child-text'><FormattedMessage id="banner.banneroption5"/></div>
                                 </a>
 
                             </div>
@@ -125,33 +125,11 @@ class HomeHeader extends Component {
                                     <div className='option-child-icon'>
                                         <i className="fas fa-building"></i>
                                     </div>
-                                    <div className='option-child-text'>Chung cư</div>
+                                    <div className='option-child-text'><FormattedMessage id="banner.banneroption6"/></div>
                                 </a>
 
                             </div>
-                            <div className='option-child-item'>
-                                <a href='/' className='option-child-item-link'>
-                                    <div className='option-child-icon'>
-                                        <i className="fas fa-building"></i>
-                                    </div>
-                                    <div className='option-child-text'>Chung cư</div>
-                                </a>
-
-                            </div>
-                            <div className='option-child-item'>
-                                <a href='/' className='option-child-item-link'>
-                                    <div className='option-child-icon'>
-                                        <i className="fas fa-building"></i>
-                                    </div>
-                                    <div className='option-child-text'>Chung cư</div>
-                                </a>
-
-                            </div>
-
-
-
-
-
+                        
                         </div>
                     </div>
                 </div>

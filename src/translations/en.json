@@ -10,6 +10,16 @@
         "contactconsultant": "Contact a consultant",
         "support": "Support"
     },
+    "banner":{
+        "title1":"Find your next industrial property",
+        "title2":"Commercial & development land",
+        "banneroption1":"Apartment",
+         "banneroption2":"Industrial land",
+         "banneroption3":"Factory lease",
+         "banneroption4":"Project",
+         "banneroption5":"Apartment",
+         "banneroption6":"Apartment"
+    },
     "common": {
         "add": "Add",
         "edit": "Edit",
