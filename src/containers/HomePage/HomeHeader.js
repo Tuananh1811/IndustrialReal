@@ -21,40 +21,43 @@ class HomeHeader extends Component {
                         <div className='center-content'>
                             <div className='child-content'>
                                 <a className='child-content-link' href='/'>
-                                    <div><b><FormattedMessage id="homeheader.property"/></b></div>
-                                    <div><span className='sub-title'><FormattedMessage id="homeheader.findproperty"/> </span></div>
+                                    <div><b><FormattedMessage id="homeheader.property" /></b></div>
+                                    <div><span className='sub-title'><FormattedMessage id="homeheader.findproperty" /> </span></div>
                                 </a>
 
                             </div>
                             <div className='child-content'>
                                 <a className='child-content-link' href='/'>
-                                    <div><b><FormattedMessage id="homeheader.project"/></b></div>
-                                    <div><span className='sub-title'><FormattedMessage id="homeheader.findproject"/></span></div>
+                                    <div><b><FormattedMessage id="homeheader.project" /></b></div>
+                                    <div><span className='sub-title'><FormattedMessage id="homeheader.findproject" /></span></div>
                                 </a>
 
                             </div>
                             <div className='child-content'>
                                 <a className='child-content-link' href='/'>
-                                    <div><b><FormattedMessage id="homeheader.news"/></b></div>
-                                    <div><span className='sub-title'><FormattedMessage id="homeheader.newproperty"/> </span></div>
+                                    <div><b><FormattedMessage id="homeheader.news" /></b></div>
+                                    <div><span className='sub-title'><FormattedMessage id="homeheader.newproperty" /> </span></div>
                                 </a>
 
                             </div>
                             <div className='child-content'>
-                                <a className='child-content-link' href='/'><div><b><FormattedMessage id="homeheader.contact"/></b></div>
-                                    <div><span className='sub-title'><FormattedMessage id="homeheader.contactconsultant"/></span></div></a>
+                                <a className='child-content-link' href='/'><div><b><FormattedMessage id="homeheader.contact" /></b></div>
+                                    <div><span className='sub-title'><FormattedMessage id="homeheader.contactconsultant" /></span></div></a>
 
                             </div>
                         </div>
                         <div className='right-content'>
                             <div className='support'>
-                                <a href='/'> <i class="fas fa-question"></i><FormattedMessage id="homeheader.support"/> </a>
+                                <a href='/'> <i class="fas fa-question"></i><FormattedMessage id="homeheader.support" /> </a>
 
                             </div>
 
                             <div className='flag'>
                                 <a href='/'>
                                     VN
+                                </a>
+                                <a href='/'>
+                                    EN
                                 </a>
 
                             </div>
@@ -65,8 +68,8 @@ class HomeHeader extends Component {
                 </div>
                 <div className='home-header-banner'>
                     <div className='home-header-banner-content'>
-                        <div className='title1'><FormattedMessage id="banner.title1"/></div>
-                        <div className='title2'><FormattedMessage id="banner.title2"/></div>
+                        <div className='title1'><FormattedMessage id="banner.title1" /></div>
+                        <div className='title2'><FormattedMessage id="banner.title2" /></div>
                         <div className='search'>
                             <i className="fas fa-search"></i>
                             <input id="timkiem_chung" className='search-input' type="search" placeholder="Tìm dự án"></input>
@@ -80,7 +83,7 @@ class HomeHeader extends Component {
                                     <div className='option-child-icon'>
                                         <i className="fas fa-building"></i>
                                     </div>
-                                    <div className='option-child-text'><FormattedMessage id="banner.banneroption1"/></div>
+                                    <div className='option-child-text'><FormattedMessage id="banner.banneroption1" /></div>
                                 </a>
 
                             </div>
@@ -89,7 +92,7 @@ class HomeHeader extends Component {
                                     <div className='option-child-icon'>
                                         <i className="fas fa-industry"></i>
                                     </div>
-                                    <div className='option-child-text'><FormattedMessage id="banner.banneroption2"/></div>
+                                    <div className='option-child-text'><FormattedMessage id="banner.banneroption2" /></div>
                                 </a>
 
                             </div>
@@ -98,7 +101,7 @@ class HomeHeader extends Component {
                                     <div className='option-child-icon'>
                                         <i className="fas fa-building"></i>
                                     </div>
-                                    <div className='option-child-text'><FormattedMessage id="banner.banneroption3"/></div>
+                                    <div className='option-child-text'><FormattedMessage id="banner.banneroption3" /></div>
                                 </a>
 
                             </div>
@@ -107,7 +110,7 @@ class HomeHeader extends Component {
                                     <div className='option-child-icon'>
                                         <i className="fas fa-sitemap"></i>
                                     </div>
-                                    <div className='option-child-text'><FormattedMessage id="banner.banneroption4"/></div>
+                                    <div className='option-child-text'><FormattedMessage id="banner.banneroption4" /></div>
                                 </a>
 
                             </div>
@@ -116,7 +119,7 @@ class HomeHeader extends Component {
                                     <div className='option-child-icon'>
                                         <i className="fas fa-building"></i>
                                     </div>
-                                    <div className='option-child-text'><FormattedMessage id="banner.banneroption5"/></div>
+                                    <div className='option-child-text'><FormattedMessage id="banner.banneroption5" /></div>
                                 </a>
 
                             </div>
@@ -125,11 +128,9 @@ class HomeHeader extends Component {
                                     <div className='option-child-icon'>
                                         <i className="fas fa-building"></i>
                                     </div>
-                                    <div className='option-child-text'><FormattedMessage id="banner.banneroption6"/></div>
+                                    <div className='option-child-text'><FormattedMessage id="banner.banneroption6" /></div>
                                 </a>
-
                             </div>
-                        
                         </div>
                     </div>
                 </div>
