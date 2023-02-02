@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
+
 import { connect } from 'react-redux';
 import './HomeHeader.scss';
+import { FormattedMessage } from 'react-intl';
 class HomeHeader extends Component {
 
     render() {
@@ -20,15 +21,15 @@ class HomeHeader extends Component {
                         <div className='center-content'>
                             <div className='child-content'>
                                 <a className='child-content-link' href='/'>
-                                    <div><b>Bất động sản</b></div>
-                                    <div><span className='sub-title'>Tìm dự án theo loại </span></div>
+                                    <div><b><FormattedMessage id="homeheader.property"/></b></div>
+                                    <div><span className='sub-title'><FormattedMessage id="homeheader.findproperty"/> </span></div>
                                 </a>
 
                             </div>
                             <div className='child-content'>
                                 <a className='child-content-link' href='/'>
-                                    <div><b>Dự án</b></div>
-                                    <div><span className='sub-title'>Chọn dự án có sẵn</span></div>
+                                    <div><b><FormattedMessage id="homeheader.project"/></b></div>
+                                    <div><span className='sub-title'><FormattedMessage id="homeheader.findproject"/></span></div>
                                 </a>
 
                             </div>
@@ -164,7 +165,9 @@ class HomeHeader extends Component {
 
 const mapStateToProps = state => {
     return {
-        isLoggedIn: state.user.isLoggedIn
+        isLoggedIn: state.user.isLoggedIn,
+        language: state.app.language,
+        //inject
     };
 };
 

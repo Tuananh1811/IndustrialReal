@@ -1,4 +1,10 @@
 {
+    "homeheader":{
+        "property":"Property",
+        "findproperty":"Find property by type",
+        "project":"Project",
+        "findproject":"View existing projects"
+    },
     "common": {
         "add": "Add",
         "edit": "Edit",

@@ -1,4 +1,11 @@
 {
+    "homeheader":{
+        "property":"Bất động sản",
+        "findproperty":"Tìm dự án theo loại",
+        "project":"Dự án",
+        "findproject":"Chọn dự án có sẵn"
+
+    },
     "common": {
         "add": "Thêm",
         "edit": "Sửa",
