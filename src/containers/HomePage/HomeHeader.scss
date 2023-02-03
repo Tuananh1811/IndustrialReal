@@ -34,7 +34,7 @@
                 background-repeat: no-repeat;
                 background-size  : 100%;
                 width            : 70%;
-               
+
             }
         }
 
@@ -81,19 +81,41 @@
             .support,
             .flag {
                 padding: 0px 10px;
-               
-               
+
+
             }
-            .flag{
+
+            .flag {
                 display: flex;
-                span{
-                    color: #000;
-                    text-decoration: none;
-                    padding-left: 10px;
-                  
-                    &:hover{
-                        cursor: pointer;
-                        color: #EF5924 !important;
+                .language-vi {
+                    cursor       : pointer;
+                    padding-right: 10px;
+                    opacity      : 0.2;
+                    &.active {
+                        opacity: 1;
+
+                        span {
+                            font-weight: 600;
+                            color      : #EF5924 !important;
+                        }
+                    }
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+                .language-en {
+                    cursor : pointer;
+                    opacity: 0.2;
+                    &.active {
+                        opacity: 1;
+
+                        span {
+                            font-weight: 600;
+                            color      : #EF5924 !important;
+                        }
+                    }
+                    &:hover {
+                        opacity: 1;
                     }
                 }
             }
@@ -102,8 +124,8 @@
 }
 
 .home-header-banner {
-    background-image   : url('../../assets/images/DJI_0766-1.jpg')
-    ,linear-gradient(rgba(0, 0, 0, 0.25),rgba(255, 255, 255, 0.1));;
+    background-image: url('../../assets/images/DJI_0766-1.jpg'), linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.1));
+    ;
     height             : auto;
     background-repeat  : no-repeat;
     background-size    : cover;
@@ -119,7 +141,7 @@
         margin-left   : auto;
         padding-top   : 100px;
         padding-bottom: 150px;
-        text-align: center;
+        text-align    : center;
 
         .title1 {
 
@@ -186,7 +208,7 @@
                 padding: 5px;
 
                 .option-child-item-link {
-                    min-width: 180px;
+                    min-width      : 180px;
                     text-align     : center;
                     padding        : 5px 5px;
                     color          : #333;
