@@ -77,11 +77,23 @@
             display        : flex;
             justify-content: flex-end;
             align-items    : center;
-
+            .support{
+                a{
+                    text-decoration: none;
+                    color: #000;
+                   i{
+                    margin-right: 5px;
+                   }
+                   &:hover{
+                    font-weight: bold;
+                    color      : #EF5924 !important;
+                }
+                }
+            }
             .support,
             .flag {
                 padding: 0px 10px;
-
+                
 
             }
 
@@ -95,7 +107,7 @@
                         opacity: 1;
 
                         span {
-                            font-weight: 600;
+                            font-weight: 700;
                             color      : #EF5924 !important;
                         }
                     }
@@ -110,7 +122,7 @@
                         opacity: 1;
 
                         span {
-                            font-weight: 600;
+                            font-weight: 700;
                             color      : #EF5924 !important;
                         }
                     }
