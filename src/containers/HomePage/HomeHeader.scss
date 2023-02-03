@@ -81,16 +81,21 @@
             .support,
             .flag {
                 padding: 0px 10px;
-                a{
+               
+               
+            }
+            .flag{
+                display: flex;
+                span{
                     color: #000;
                     text-decoration: none;
                     padding-left: 10px;
                   
                     &:hover{
+                        cursor: pointer;
                         color: #EF5924 !important;
                     }
                 }
-               
             }
         }
     }
