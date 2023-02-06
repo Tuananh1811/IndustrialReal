@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import HomeHeader from './HomeHeader';
-
+import Project from "./Section/Project";
 class HomePage extends Component {
 
     render() {
@@ -12,6 +12,7 @@ class HomePage extends Component {
         return (
           <div>
             <HomeHeader/>
+            <Project/>
           </div>
         );
     }
