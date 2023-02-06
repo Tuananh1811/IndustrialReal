@@ -28,23 +28,23 @@ class Project extends Component {
                             <h5 className='pro-customize-title'>Khu liên hợp công nghiệp </h5>
                         </div>
                         <div className='pro-customize'>
-                            <img alt='project 1' className='pro-customize-img' src={projectslide}/>
+                            <img alt='project 2' className='pro-customize-img' src={projectslide}/>
                             <h5 className='pro-customize-title'>Khu liên hợp công nghiệp </h5>
                         </div>
                         <div className='pro-customize'>
-                            <img alt='project 1' className='pro-customize-img' src={projectslide}/>
+                            <img alt='project 3' className='pro-customize-img' src={projectslide}/>
                             <h5 className='pro-customize-title'>Khu liên hợp công nghiệp </h5>
                         </div>
                         <div className='pro-customize'>
-                            <img alt='project 1' className='pro-customize-img' src={projectslide}/>
+                            <img alt='project 4' className='pro-customize-img' src={projectslide}/>
                             <h5 className='pro-customize-title'>Khu liên hợp công nghiệp </h5>
                         </div>
                         <div className='pro-customize'>
-                            <img alt='project 1' className='pro-customize-img' src={projectslide}/>
+                            <img alt='project 5' className='pro-customize-img' src={projectslide}/>
                             <h5 className='pro-customize-title'>Khu liên hợp công nghiệp </h5>
                         </div>
                         <div className='pro-customize'>
-                            <img alt='project 1' className='pro-customize-img' src={projectslide}/>
+                            <img alt='project 6' className='pro-customize-img' src={projectslide}/>
                             <h5 className='pro-customize-title'>Khu liên hợp công nghiệp </h5>
                         </div>
                     </Slider>
@@ -54,9 +54,7 @@ class Project extends Component {
 
         );
     }
-
 }
-
 const mapStateToProps = state => {
     return {
 
