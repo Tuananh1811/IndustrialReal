@@ -20,6 +20,10 @@
          "banneroption5":"Apartment",
          "banneroption6":"Apartment"
     },
+    "slide":{
+        "industrial complex":"Industrial complex"
+
+    },
     "common": {
         "add": "Add",
         "edit": "Edit",

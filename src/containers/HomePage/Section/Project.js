@@ -6,19 +6,16 @@ import Slider from "react-slick";
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import projectslide from "../../../assets/projectslide/3d.jpg";
 class Project extends Component {
 
-    changeLanguage = (language) => {
-        this.props.changeLanguageAppRedux(language);
-        //fire redux event:action
-    }
+   
     render() {
         let settings = {
             dots: false,
             infinite: true,
             speed: 500,
-            slidesToShow: 5,
+            slidesToShow: 4,
             slidesToScroll: 1
         };
 
@@ -27,22 +24,28 @@ class Project extends Component {
                 <div className='project-content'>
                     <Slider {...settings}>
                         <div className='pro-customize'>
-                            <h3>1</h3>
+                            <img alt='project 1' className='pro-customize-img' src={projectslide}/>
+                            <h5 className='pro-customize-title'>Khu liên hợp công nghiệp </h5>
                         </div>
                         <div className='pro-customize'>
-                            <h3>2</h3>
+                            <img alt='project 1' className='pro-customize-img' src={projectslide}/>
+                            <h5 className='pro-customize-title'>Khu liên hợp công nghiệp </h5>
                         </div>
                         <div className='pro-customize'>
-                            <h3>3</h3>
+                            <img alt='project 1' className='pro-customize-img' src={projectslide}/>
+                            <h5 className='pro-customize-title'>Khu liên hợp công nghiệp </h5>
                         </div>
                         <div className='pro-customize'>
-                            <h3>4</h3>
+                            <img alt='project 1' className='pro-customize-img' src={projectslide}/>
+                            <h5 className='pro-customize-title'>Khu liên hợp công nghiệp </h5>
                         </div>
                         <div className='pro-customize'>
-                            <h3>5</h3>
+                            <img alt='project 1' className='pro-customize-img' src={projectslide}/>
+                            <h5 className='pro-customize-title'>Khu liên hợp công nghiệp </h5>
                         </div>
                         <div className='pro-customize'>
-                            <h3>6</h3>
+                            <img alt='project 1' className='pro-customize-img' src={projectslide}/>
+                            <h5 className='pro-customize-title'>Khu liên hợp công nghiệp </h5>
                         </div>
                     </Slider>
                 </div>
