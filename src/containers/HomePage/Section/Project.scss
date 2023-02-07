@@ -1,5 +1,3 @@
-
-
 .section-customize {
     height : 320px;
     padding: 0px 10px;
@@ -8,20 +6,21 @@
         width     : 100%;
         height    : 90%;
         object-fit: cover;
-        opacity: .7;
-        &:hover{
+        opacity   : .7;
+
+        &:hover {
             opacity: 1;
-            cursor: pointer;
+            cursor : pointer;
         }
     }
 
     .section-customize-title {
         padding: 10px 0px;
-        &:hover{
+
+        &:hover {
             cursor: pointer;
-            color: #EF5924;
+            color : #EF5924;
         }
     }
 
 }
-
