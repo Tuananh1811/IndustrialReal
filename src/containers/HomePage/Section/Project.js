@@ -15,22 +15,16 @@ class Project extends Component {
 
 
     render() {
-        let settings = {
-            dots: false,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 4,
-            slidesToScroll: 1
-        };
+       
 
         return (
-            <div className='section-project'>
+            <div className='section-slide project-slide'>
                 <div className='section-container'>
                     <div className='section-header'>
                         <span>Dự án mới nhất</span>
                         <a className='section-header-link' href='/'>Xem thêm</a>
                     </div>
-                    <Slider {...settings}>
+                    <Slider {...this.props.settings}>
                         <div className='section-customize'>
                             <img alt='section 1' className='section-customize-img' src={projectslide} />
                             <h5 className='section-customize-title'><FormattedMessage id="slide.industrialcomplex" /> </h5>

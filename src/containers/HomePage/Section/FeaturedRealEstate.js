@@ -2,16 +2,17 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import './FeaturedRealEstate.scss';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 class FeaturedRealEstate extends Component {
 
     render() {
-        const { isLoggedIn } = this.props;
-        let linkToRedirect = isLoggedIn ? '/system/user-manage' : '/home';
-
         return (
-          <div>
-           hrllo 
-          </div>
+            <div className='section-slide'>
+                <div className='section-container'>
+                hello
+                </div>
+            </div>
         );
     }
 
