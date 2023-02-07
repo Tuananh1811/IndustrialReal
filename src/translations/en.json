@@ -20,9 +20,20 @@
          "banneroption5":"Apartment",
          "banneroption6":"Apartment"
     },
+    "titleSlide": {
+        "latestproject": "latest project",
+        "FeaturedRealEstate": "Featured Real Estate"
+    },
     "slide":{
         "industrialcomplex":"Industrial complex"
 
+    },
+    "slideRealEstate":{
+        "FeaturedRealEstate":"Featured Real Estate"
+    },
+    "button":{
+        "seemore":"See more"
+        
     },
     "common": {
         "add": "Add",

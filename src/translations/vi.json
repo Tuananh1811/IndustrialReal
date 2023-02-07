@@ -1,29 +1,38 @@
 {
-    "homeheader":{
-        "property":"Bất động sản",
-        "findproperty":"Tìm dự án theo loại",
-        "project":"Dự án",
-        "findproject":"Chọn dự án có sẵn",
-        "news":"Tin tức",
-        "newproperty":"Tin tức bất động sản",
-        "contact":"Liên hệ",
-        "contactconsultant":"Liên hệ tư vấn",
-        "support":" Hỏi đáp"
+    "homeheader": {
+        "property": "Bất động sản",
+        "findproperty": "Tìm dự án theo loại",
+        "project": "Dự án",
+        "findproject": "Chọn dự án có sẵn",
+        "news": "Tin tức",
+        "newproperty": "Tin tức bất động sản",
+        "contact": "Liên hệ",
+        "contactconsultant": "Liên hệ tư vấn",
+        "support": " Hỏi đáp"
     },
-
-    "banner":{
-        "title1":"Tìm tài sản công nghiệp tiếp theo của bạn",
-        "title2":"Đất thương mại & phát triển",
-        "banneroption1":"Chung cư",
-        "banneroption2":"Đất công nghiệp",
-        "banneroption3":"Thuê nhà máy",
-        "banneroption4":"Dự án",
-        "banneroption5":"Chung cư",
-        "banneroption6":"Chung cư"
+    "banner": {
+        "title1": "Tìm tài sản công nghiệp tiếp theo của bạn",
+        "title2": "Đất thương mại & phát triển",
+        "banneroption1": "Chung cư",
+        "banneroption2": "Đất công nghiệp",
+        "banneroption3": "Thuê nhà máy",
+        "banneroption4": "Dự án",
+        "banneroption5": "Chung cư",
+        "banneroption6": "Chung cư"
     },
-    "slide":{
-        "industrialcomplex":"Khu liên hợp công nghiệp"
-
+    "titleSlide": {
+        "latestproject": "dự án mới nhất",
+        "FeaturedRealEstate": "Bất động sản nổi bật"
+    },
+    "slide": {
+        "industrialcomplex": "Khu liên hợp công nghiệp"
+    },
+    "slideRealEstate": {
+        "FeaturedRealEstate": "Bất động sản nổi bật"
+    },
+    "button":{
+        "seemore":"Xem thêm"
+        
     },
     "common": {
         "add": "Thêm",

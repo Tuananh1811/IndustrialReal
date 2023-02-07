@@ -21,8 +21,8 @@ class Project extends Component {
             <div className='section-slide project-slide'>
                 <div className='section-container'>
                     <div className='section-header'>
-                        <span>Dự án mới nhất</span>
-                        <a className='section-header-link' href='/'>Xem thêm</a>
+                        <span><FormattedMessage id="titleSlide.latestproject"/></span>
+                        <a className='section-header-link' href='/'><FormattedMessage id="button.seemore"/></a>
                     </div>
                     <Slider {...this.props.settings}>
                         <div className='section-customize'>
