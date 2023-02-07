@@ -7,6 +7,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import projectslide from "../../../assets/projectslide/3d.jpg";
+
+import { LANGUAGES } from '../../../utils';
+
+import { changeLanguageApp } from "../../../store/actions";
 class Project extends Component {
 
 
@@ -21,35 +25,35 @@ class Project extends Component {
 
         return (
             <div className='section-project'>
-                <div className='project-container'>
-                    <div className='project-header'>
+                <div className='section-container'>
+                    <div className='section-header'>
                         <span>Dự án mới nhất</span>
-                        <a className='project-header-link' href='/'>Xem thêm</a>
+                        <a className='section-header-link' href='/'>Xem thêm</a>
                     </div>
                     <Slider {...settings}>
-                        <div className='pro-customize'>
-                            <img alt='project 1' className='pro-customize-img' src={projectslide} />
-                            <h5 className='pro-customize-title'>Khu liên hợp công nghiệp </h5>
+                        <div className='section-customize'>
+                            <img alt='section 1' className='section-customize-img' src={projectslide} />
+                            <h5 className='section-customize-title'><FormattedMessage id="slide.industrialcomplex" /> </h5>
                         </div>
-                        <div className='pro-customize'>
-                            <img alt='project 2' className='pro-customize-img' src={projectslide} />
-                            <h5 className='pro-customize-title'>Khu liên hợp công nghiệp </h5>
+                        <div className='section-customize'>
+                            <img alt='section 2' className='section-customize-img' src={projectslide} />
+                            <h5 className='section-customize-title'><FormattedMessage id="slide.industrialcomplex" /> </h5>
                         </div>
-                        <div className='pro-customize'>
-                            <img alt='project 3' className='pro-customize-img' src={projectslide} />
-                            <h5 className='pro-customize-title'>Khu liên hợp công nghiệp </h5>
+                        <div className='section-customize'>
+                            <img alt='section 3' className='section-customize-img' src={projectslide} />
+                            <h5 className='section-customize-title'><FormattedMessage id="slide.industrialcomplex" /></h5>
                         </div>
-                        <div className='pro-customize'>
-                            <img alt='project 4' className='pro-customize-img' src={projectslide} />
-                            <h5 className='pro-customize-title'>Khu liên hợp công nghiệp </h5>
+                        <div className='section-customize'>
+                            <img alt='section 4' className='section-customize-img' src={projectslide} />
+                            <h5 className='section-customize-title'><FormattedMessage id="slide.industrialcomplex" /></h5>
                         </div>
-                        <div className='pro-customize'>
-                            <img alt='project 5' className='pro-customize-img' src={projectslide} />
-                            <h5 className='pro-customize-title'>Khu liên hợp công nghiệp </h5>
+                        <div className='section-customize'>
+                            <img alt='section 5' className='section-customize-img' src={projectslide} />
+                            <h5 className='section-customize-title'><FormattedMessage id="slide.industrialcomplex" /></h5>
                         </div>
-                        <div className='pro-customize'>
-                            <img alt='project 6' className='pro-customize-img' src={projectslide} />
-                            <h5 className='pro-customize-title'>Khu liên hợp công nghiệp </h5>
+                        <div className='section-customize'>
+                            <img alt='section 6' className='section-customize-img' src={projectslide} />
+                            <h5 className='section-customize-title'><FormattedMessage id="slide.industrialcomplex" /></h5>
                         </div>
                     </Slider>
                 </div>
@@ -61,14 +65,14 @@ class Project extends Component {
 }
 const mapStateToProps = state => {
     return {
-
+        language: state.app.language,
         //inject
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
-
+        changeLanguageAppRedux: (language) => dispatch(changeLanguageApp(language))
     };
 };
 

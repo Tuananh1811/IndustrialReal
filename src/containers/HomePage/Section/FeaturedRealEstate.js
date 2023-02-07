@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
-import HomeHeader from './HomeHeader';
-import Project from "./Section/Project";
-import FeaturedRealEstate from './Section/FeaturedRealEstate';
-import './HomePage.scss';
-class HomePage extends Component {
+import './FeaturedRealEstate.scss';
+class FeaturedRealEstate extends Component {
 
     render() {
         const { isLoggedIn } = this.props;
@@ -13,9 +10,7 @@ class HomePage extends Component {
 
         return (
           <div>
-            <HomeHeader/>
-            <Project/>
-            <FeaturedRealEstate/>
+           hrllo 
           </div>
         );
     }
@@ -33,4 +28,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
+export default connect(mapStateToProps, mapDispatchToProps)(FeaturedRealEstate);
