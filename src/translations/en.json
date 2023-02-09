@@ -32,8 +32,13 @@
     "slideRealEstate":{
         "FeaturedRealEstate":"Featured Real Estate"
     },
+    "slideNews":{
+        "title":"Top 10 Best Countries to Invest in Post COVID Safely and Affectively"
+
+    },
     "button":{
-        "seemore":"See more"
+        "seemore":"See more",
+        "readarticle":"read article"
         
     },
     "common": {

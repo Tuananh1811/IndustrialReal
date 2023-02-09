@@ -26,9 +26,9 @@ class FeaturedRealEstate extends Component {
                             </div>
                             <div className='section-customize-news-title'>
                                 <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
-                                <h3><a href='/'>Top 10 Best Countries to Invest in Post COVID Safely and Affectively</a></h3>
+                                <h3><a href='/'><FormattedMessage id="slideNews.title"/></a></h3>
                                 <div class="btn-link-news">
-                                    <a href="/" title="Top 10 Best Countries to Invest in Post COVID Safely and Affectively">Read article</a>
+                                    <a href="/" ><FormattedMessage id="button.readarticle"/></a>
                                 </div>
                             </div>
                         </div>
@@ -37,11 +37,10 @@ class FeaturedRealEstate extends Component {
                                 <img className="style-img" alt='tin tuc' src={realestate} />
                             </div>
                             <div className='section-customize-news-title'>
-                            <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
-                                <h3><a href='/'>Is Vietnam One of The Top 20 Best Countries to Invest In?</a></h3>
-                               
+                                <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
+                                <h3><a href='/'><FormattedMessage id="slideNews.title"/></a></h3>
                                 <div class="btn-link-news">
-                                    <a href="/" title="Top 10 Best Countries to Invest in Post COVID Safely and Affectively">Read article</a>
+                                    <a href="/" ><FormattedMessage id="button.readarticle"/></a>
                                 </div>
                             </div>
                         </div>
@@ -50,11 +49,10 @@ class FeaturedRealEstate extends Component {
                                 <img className="style-img" alt='tin tuc' src={realestate} />
                             </div>
                             <div className='section-customize-news-title'>
-                            <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
-                                <h3><a href='/'>Is Vietnam One of The Top 20 Best Countries to Invest In?</a></h3>
-                                
+                                <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
+                                <h3><a href='/'><FormattedMessage id="slideNews.title"/></a></h3>
                                 <div class="btn-link-news">
-                                    <a href="/" title="Top 10 Best Countries to Invest in Post COVID Safely and Affectively">Read article</a>
+                                    <a href="/" ><FormattedMessage id="button.readarticle"/></a>
                                 </div>
                             </div>
                         </div>
@@ -63,11 +61,10 @@ class FeaturedRealEstate extends Component {
                                 <img className="style-img" alt='tin tuc' src={realestate} />
                             </div>
                             <div className='section-customize-news-title'>
-                            <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
-                                <h3><a href='/'>Is Vietnam One of The Top 20 Best Countries to Invest In?</a></h3>
-                               
+                                <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
+                                <h3><a href='/'><FormattedMessage id="slideNews.title"/></a></h3>
                                 <div class="btn-link-news">
-                                    <a href="/" title="Top 10 Best Countries to Invest in Post COVID Safely and Affectively">Read article</a>
+                                    <a href="/" ><FormattedMessage id="button.readarticle"/></a>
                                 </div>
                             </div>
                         </div>
@@ -76,11 +73,10 @@ class FeaturedRealEstate extends Component {
                                 <img className="style-img" alt='tin tuc' src={realestate} />
                             </div>
                             <div className='section-customize-news-title'>
-                            <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
-                                <h3><a href='/'>Is Vietnam One of The Top 20 Best Countries to Invest In?</a></h3>
-                                
+                                <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
+                                <h3><a href='/'><FormattedMessage id="slideNews.title"/></a></h3>
                                 <div class="btn-link-news">
-                                    <a href="/" title="Top 10 Best Countries to Invest in Post COVID Safely and Affectively">Read article</a>
+                                    <a href="/" ><FormattedMessage id="button.readarticle"/></a>
                                 </div>
                             </div>
                         </div>
@@ -89,14 +85,18 @@ class FeaturedRealEstate extends Component {
                                 <img className="style-img" alt='tin tuc' src={realestate} />
                             </div>
                             <div className='section-customize-news-title'>
-                            <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
-                                <h3><a href='/'>Is Vietnam One of The Top 20 Best Countries to Invest In?</a></h3>
-                                
+                                <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
+                                <h3><a href='/'><FormattedMessage id="slideNews.title"/></a></h3>
                                 <div class="btn-link-news">
-                                    <a href="/" title="Top 10 Best Countries to Invest in Post COVID Safely and Affectively">Read article</a>
+                                    <a href="/" ><FormattedMessage id="button.readarticle"/></a>
                                 </div>
                             </div>
                         </div>
+                        
+                        
+                        
+                          
+                      
 
 
                     </Slider>

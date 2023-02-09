@@ -31,8 +31,13 @@
     "slideRealEstate": {
         "FeaturedRealEstate": "Bất động sản nổi bật"
     },
+    "slideNews":{
+        "title":"Top 10 quốc gia tốt nhất để đầu tư sau COVID một cách an toàn và hiệu quả"
+
+    },
     "button":{
-        "seemore":"Xem thêm"
+        "seemore":"Xem thêm",
+        "readarticle":"Đọc bài viết"
         
     },
     "common": {
