@@ -22,7 +22,8 @@
     },
     "titleSlide": {
         "latestproject": "latest project",
-        "FeaturedRealEstate": "Featured Real Estate"
+        "FeaturedRealEstate": "Featured Real Estate",
+        "NewsHome":"business newsletter"
     },
     "slide":{
         "industrialcomplex":"Industrial complex"

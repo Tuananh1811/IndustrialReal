@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import HomeHeader from './HomeHeader';
 import Project from "./Section/Project";
 import FeaturedRealEstate from './Section/FeaturedRealEstate';
+import NewsHome from './Section/NewsHome';
 import './HomePage.scss';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -23,6 +24,9 @@ class HomePage extends Component {
                 <HomeHeader />
                 <Project settings={settings} />
                 <FeaturedRealEstate settings={settings} />
+                <NewsHome settings={settings={
+                     slidesToShow: 2
+                }}/>
             </div>
         );
     }

@@ -104,3 +104,10 @@
     }
   }
 }
+a{
+  text-decoration: none !important;
+  color: #333 !important;
+  &:hover{
+    color: #EF5924 !important;
+  }
+}
