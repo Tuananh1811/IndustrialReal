@@ -6,13 +6,11 @@
     .section-customize-news-img {
         width : 40%;
         height: 100%;
-
         .style-img {
             width     : 100%;
             height    : 100%;
             object-fit: cover;
         }
-
     }
 
     .section-customize-news-title {
@@ -23,8 +21,6 @@
             color         : #EF5924;
             text-transform: uppercase;
             font-size     : 15px;
-
-
         }
         .btn-link-news{
           position: absolute;
@@ -38,7 +34,7 @@
                 padding-left: 35px;
                 text-align: center;
                 min-width: 225px;
-                line-height: 50px;
+                line-height: 40px;
                 text-decoration: none;
                 font-size: 15px;
                 position: relative;
