@@ -14,14 +14,15 @@ class About extends Component {
                 <div className='section-container'>
                     <div className='section-header'>
                         <span><FormattedMessage id="titleSlide.AboutHome" /></span>
-                        <a className='section-header-link' href='/'><FormattedMessage id="button.seemore" /></a>
                     </div>
                     <div className='section-about'>
-                        <div className='section-abour-left'>1</div>
+                        <div className='section-abour-left'>
+                            
+                        </div>
                         <div className='section-abour-right'>2</div>
 
                     </div>
-                   
+
                 </div>
             </div>
         );
