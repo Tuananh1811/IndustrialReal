@@ -10,11 +10,11 @@ class HomeFooter extends Component {
 
     render() {
         return (
-           <div className='home-footer'>
-          
-           <p>&copy; 2023 by CNCTech</p>
+            <div className='home-footer'>
 
-           </div>
+                <p>&copy; 2023 by CNCTech</p>
+
+            </div>
         );
     }
 }

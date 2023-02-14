@@ -26,12 +26,12 @@ class HomePage extends Component {
                 <HomeHeader />
                 <Project settings={settings} />
                 <FeaturedRealEstate settings={settings} />
-                <NewsHome settings={settings={
-                     slidesToShow: 2
-                }}/>
-                <About/>
-                <HomeFooter/>
-                
+                <NewsHome settings={settings = {
+                    slidesToShow: 2
+                }} />
+                <About />
+                <HomeFooter />
+
             </div>
         );
     }
