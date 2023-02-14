@@ -41,6 +41,9 @@
         "readarticle":"Đọc bài viết"
         
     },
+    "aboutHomePage":{
+        "decsAbout":"Kỷ niệm 14 năm ngày thành lập, CNCTech vinh dự được giới thiệu trong chuyên mục Doanh nghiệp và Doanh nhân kênh VTV1 của Đài Truyền hình Việt Nam."
+    },
     "common": {
         "add": "Thêm",
         "edit": "Sửa",

@@ -17,10 +17,14 @@ class About extends Component {
                     </div>
                     <div className='section-about'>
                         <div className='section-abour-left'>
-                            <iframe className='section-about-video' width="1131" height="636" src="https://www.youtube.com/embed/vGHFMZLf_uA" title="CNCTech trên VTV1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe className='section-about-video' width="1131" height="636"
+                                src="https://www.youtube.com/embed/vGHFMZLf_uA" title="CNCTech trên VTV1"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+                            </iframe>
                         </div>
                         <div className='section-abour-right'>
-                            <p>Kỷ niệm 14 năm ngày thành lập, CNCTech vinh dự được giới thiệu trong chuyên mục Doanh nghiệp và Doanh nhân kênh VTV1 của Đài Truyền hình Việt Nam.</p>
+                            <p><FormattedMessage id="aboutHomePage.decsAbout" /></p>
 
                         </div>
 
