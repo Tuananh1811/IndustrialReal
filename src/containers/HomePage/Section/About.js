@@ -9,14 +9,14 @@ import { LANGUAGES } from '../../../utils';
 import { FormattedMessage } from 'react-intl';
 import { changeLanguageApp } from "../../../store/actions";
 import realestate from "../../../assets/real/real.jpg"
-class NewsHome extends Component {
+class About extends Component {
 
     render() {
         return (
-            <div className='section-slide project-slide'>
+            <div className='section-slide '>
                 <div className='section-container'>
                     <div className='section-header'>
-                        <span><FormattedMessage id="titleSlide.NewsHome" /></span>
+                        <span><FormattedMessage id="titleSlide.AboutHome" /></span>
                         <a className='section-header-link' href='/'><FormattedMessage id="button.seemore" /></a>
                     </div>
                     <Slider {...this.props.settings}>
@@ -111,4 +111,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(NewsHome);
+export default connect(mapStateToProps, mapDispatchToProps)(About);

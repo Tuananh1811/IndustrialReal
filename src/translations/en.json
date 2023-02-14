@@ -23,7 +23,8 @@
     "titleSlide": {
         "latestproject": "latest project",
         "FeaturedRealEstate": "Featured Real Estate",
-        "NewsHome":"business newsletter"
+        "NewsHome":"business newsletter",
+        "AboutHome":"About Us"
     },
     "slide":{
         "industrialcomplex":"Industrial complex"
