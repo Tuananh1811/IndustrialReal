@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
-import './NewsHome.scss';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import './About.scss';
 import { LANGUAGES } from '../../../utils';
 import { FormattedMessage } from 'react-intl';
 import { changeLanguageApp } from "../../../store/actions";
-import realestate from "../../../assets/real/real.jpg"
+
 class About extends Component {
 
     render() {
@@ -19,80 +16,12 @@ class About extends Component {
                         <span><FormattedMessage id="titleSlide.AboutHome" /></span>
                         <a className='section-header-link' href='/'><FormattedMessage id="button.seemore" /></a>
                     </div>
-                    <Slider {...this.props.settings}>
-                        <div className='section-customize-news'>
-                            <div className='section-customize-news-img'>
-                                <img className="style-img" alt='tin tuc' src={realestate} />
-                            </div>
-                            <div className='section-customize-news-title'>
-                                <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
-                                <h3><a href='/'><FormattedMessage id="slideNews.title" /></a></h3>
-                                <div class="btn-link-news">
-                                    <a href="/" ><FormattedMessage id="button.readarticle" /></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='section-customize-news'>
-                            <div className='section-customize-news-img'>
-                                <img className="style-img" alt='tin tuc' src={realestate} />
-                            </div>
-                            <div className='section-customize-news-title'>
-                                <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
-                                <h3><a href='/'><FormattedMessage id="slideNews.title" /></a></h3>
-                                <div class="btn-link-news">
-                                    <a href="/" ><FormattedMessage id="button.readarticle" /></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='section-customize-news'>
-                            <div className='section-customize-news-img'>
-                                <img className="style-img" alt='tin tuc' src={realestate} />
-                            </div>
-                            <div className='section-customize-news-title'>
-                                <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
-                                <h3><a href='/'><FormattedMessage id="slideNews.title" /></a></h3>
-                                <div class="btn-link-news">
-                                    <a href="/" ><FormattedMessage id="button.readarticle" /></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='section-customize-news'>
-                            <div className='section-customize-news-img'>
-                                <img className="style-img" alt='tin tuc' src={realestate} />
-                            </div>
-                            <div className='section-customize-news-title'>
-                                <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
-                                <h3><a href='/'><FormattedMessage id="slideNews.title" /></a></h3>
-                                <div class="btn-link-news">
-                                    <a href="/" ><FormattedMessage id="button.readarticle" /></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='section-customize-news'>
-                            <div className='section-customize-news-img'>
-                                <img className="style-img" alt='tin tuc' src={realestate} />
-                            </div>
-                            <div className='section-customize-news-title'>
-                                <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
-                                <h3><a href='/'><FormattedMessage id="slideNews.title" /></a></h3>
-                                <div class="btn-link-news">
-                                    <a href="/" ><FormattedMessage id="button.readarticle" /></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='section-customize-news'>
-                            <div className='section-customize-news-img'>
-                                <img className="style-img" alt='tin tuc' src={realestate} />
-                            </div>
-                            <div className='section-customize-news-title'>
-                                <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
-                                <h3><a href='/'><FormattedMessage id="slideNews.title" /></a></h3>
-                                <div class="btn-link-news">
-                                    <a href="/" ><FormattedMessage id="button.readarticle" /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </Slider>
+                    <div className='section-about'>
+                        <div className='section-abour-left'>1</div>
+                        <div className='section-abour-right'>2</div>
+
+                    </div>
+                   
                 </div>
             </div>
         );

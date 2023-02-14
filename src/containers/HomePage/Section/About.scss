@@ -1,0 +1,10 @@
+.section-about{
+    width: 100%;
+    display: flex;
+    height: auto;
+    .section-abour-left,
+    .section-abour-right{
+        width: 50%;
+        padding: 20px 10px;
+    }
+}
