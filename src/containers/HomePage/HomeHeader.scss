@@ -1,6 +1,10 @@
 .home-header-container {
-    width : 100%;
-    height: 100px;
+    width           : 100%;
+    height          : 100px;
+    background-color: #fff;
+    position        : fixed;
+    top             : 0px;
+    z-index         : 10;
 
     //
     .home-header-content {
@@ -151,6 +155,7 @@
     width              : 100%;
     background-position: center;
     position           : relative;
+    top                : 80px;
 
     .home-header-banner-content {
 
@@ -158,7 +163,7 @@
         width         : 100%;
         margin-right  : auto;
         margin-left   : auto;
-        padding-top   : 100px;
+        padding-top   : 150px;
         padding-bottom: 150px;
         text-align    : center;
 
