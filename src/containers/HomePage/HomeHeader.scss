@@ -109,10 +109,8 @@
                     cursor       : pointer;
                     padding-right: 10px;
                     opacity      : 0.2;
-
                     &.active {
                         opacity: 1;
-
                         span {
                             font-weight: 700;
                             color      : #EF5924 !important;
@@ -271,9 +269,4 @@
             }
         }
     }
-
-
-
-
-
 }
