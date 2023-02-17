@@ -26,11 +26,8 @@ class About extends Component {
                         </div>
                         <div className='section-abour-right'>
                             <p><FormattedMessage id="aboutHomePage.decsAbout" /></p>
-
                         </div>
-
                     </div>
-
                 </div>
             </div>
         );
