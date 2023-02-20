@@ -34,6 +34,7 @@ class Header extends Component {
                         </span>
                     </div>
                     <i className="fas fa-sign-out-alt"></i>
+                   
                 </div>
             </div>
         );
