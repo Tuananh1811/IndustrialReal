@@ -77,7 +77,7 @@
             "system-administrator": {
                 "header": "System Administrator",
                 "user-manage": "User manage",
-                "user-redux": "User manage redux"
+                "user-redux": "Manage user using redux"
                 
             },
             "system-parameter": {
