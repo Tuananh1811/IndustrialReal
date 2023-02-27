@@ -16,8 +16,8 @@ class FeaturedRealEstate extends Component {
             <div className='section-slide'>
                 <div className='section-container'>
                     <div className='section-header'>
-                        <span><FormattedMessage id="titleSlide.FeaturedRealEstate"/></span>
-                        <a className='section-header-link' href='/'><FormattedMessage id="button.seemore"/></a>
+                        <span><FormattedMessage id="titleSlide.FeaturedRealEstate" /></span>
+                        <a className='section-header-link' href='/'><FormattedMessage id="button.seemore" /></a>
                     </div>
                     <Slider {...this.props.settings}>
                         <div className='section-customize'>
@@ -51,7 +51,10 @@ class FeaturedRealEstate extends Component {
     }
 
 }
+/**
 
+
+ */
 const mapStateToProps = state => {
     return {
         language: state.app.language,

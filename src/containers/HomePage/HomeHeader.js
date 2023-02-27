@@ -63,8 +63,6 @@ class HomeHeader extends Component {
 
                             </div>
                         </div>
-
-
                     </div>
                 </div>
                 <div className='home-header-banner'>
