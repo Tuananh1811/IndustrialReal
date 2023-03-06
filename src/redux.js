@@ -23,9 +23,7 @@ const reduxStateSyncConfig = {
     whitelist: [
         actionTypes.APP_START_UP_COMPLETE,
         actionTypes.CHANGE_LANGUAGE,
-/**
- * 
- */
+
     ]
 }
 
