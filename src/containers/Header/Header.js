@@ -4,6 +4,7 @@ import * as actions from "../../store/actions";
 import Navigator from '../../components/Navigator';
 import { adminMenu } from './menuApp';
 import { LANGUAGES } from '../../utils';
+import { FormattedMessage } from 'react-intl';
 import './Header.scss';
 
 class Header extends Component {
@@ -22,7 +23,8 @@ class Header extends Component {
                 </div>
 
                 {/* nút logout */}
-                <div className="btn btn-logout" onClick={processLogout} title="Log out">
+                <div className=" header-top-right"  >
+                    <span className='welcome'><FormattedMessage id="homeheader.welcome"></FormattedMessage>, <strong>Admin</strong></span>
                     <div className="languages">
                         <span className={language === LANGUAGES.VI ? "language-vi active" : "language-vi"}
                             onClick={() => this.changeLanguage(LANGUAGES.VI)}>
@@ -33,7 +35,7 @@ class Header extends Component {
                             EN
                         </span>
                     </div>
-                    <i className="fas fa-sign-out-alt"></i>
+                    <i onClick={processLogout} className="fas fa-sign-out-alt" ></i>
 
                 </div>
             </div>
@@ -51,7 +53,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        // processLogout: () => dispatch(actions.processLogout()),
+         processLogout: () => dispatch(actions.processLogout()),
         changeLanguageAppRedux: (language) => dispatch(actions.changeLanguageApp(language))
     };
 };

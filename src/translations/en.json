@@ -8,7 +8,8 @@
         "newproperty": "Real estate news",
         "contact": "Contact",
         "contactconsultant": "Contact a consultant",
-        "support": "Support"
+        "support": "Support",
+        "welcome":"Welcome"
     },
     "banner":{
         "title1":"Find your next industrial property",

@@ -27,7 +27,7 @@ class NewsHome extends Component {
                             <div className='section-customize-news-title'>
                                 <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
                                 <h3><a href='/'><FormattedMessage id="slideNews.title" /></a></h3>
-                                <div class="btn-link-news">
+                                <div className="btn-link-news">
                                     <a href="/" ><FormattedMessage id="button.readarticle" /></a>
                                 </div>
                             </div>
@@ -39,7 +39,7 @@ class NewsHome extends Component {
                             <div className='section-customize-news-title'>
                                 <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
                                 <h3><a href='/'><FormattedMessage id="slideNews.title" /></a></h3>
-                                <div class="btn-link-news">
+                                <div className="btn-link-news">
                                     <a href="/" ><FormattedMessage id="button.readarticle" /></a>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@ class NewsHome extends Component {
                             <div className='section-customize-news-title'>
                                 <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
                                 <h3><a href='/'><FormattedMessage id="slideNews.title" /></a></h3>
-                                <div class="btn-link-news">
+                                <div className="btn-link-news">
                                     <a href="/" ><FormattedMessage id="button.readarticle" /></a>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@ class NewsHome extends Component {
                             <div className='section-customize-news-title'>
                                 <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
                                 <h3><a href='/'><FormattedMessage id="slideNews.title" /></a></h3>
-                                <div class="btn-link-news">
+                                <div className="btn-link-news">
                                     <a href="/" ><FormattedMessage id="button.readarticle" /></a>
                                 </div>
                             </div>
@@ -75,7 +75,7 @@ class NewsHome extends Component {
                             <div className='section-customize-news-title'>
                                 <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
                                 <h3><a href='/'><FormattedMessage id="slideNews.title" /></a></h3>
-                                <div class="btn-link-news">
+                                <div className="btn-link-news">
                                     <a href="/" ><FormattedMessage id="button.readarticle" /></a>
                                 </div>
                             </div>
@@ -87,7 +87,7 @@ class NewsHome extends Component {
                             <div className='section-customize-news-title'>
                                 <p className="style-date"><strong>blog</strong><span> | </span> <span>9 February 2023</span></p>
                                 <h3><a href='/'><FormattedMessage id="slideNews.title" /></a></h3>
-                                <div class="btn-link-news">
+                                <div className="btn-link-news">
                                     <a href="/" ><FormattedMessage id="button.readarticle" /></a>
                                 </div>
                             </div>

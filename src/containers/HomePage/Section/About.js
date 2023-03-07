@@ -20,7 +20,7 @@ class About extends Component {
                             <iframe className='section-about-video' 
                                 src="https://www.youtube.com/embed/vGHFMZLf_uA" 
                                 title="CNCTech trên VTV1"
-                                frameBorder="0"
+                              
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen>
                             </iframe>
                         </div>
