@@ -13,7 +13,6 @@ class HomeHeader extends Component {
     }
     render() {
         let language = this.props.language;
-        console.log("check", this.props.userInfo);
         return (
             <React.Fragment>
                 <div className='home-header-container'>
@@ -29,38 +28,32 @@ class HomeHeader extends Component {
                                     <div><b><FormattedMessage id="homeheader.property" /></b></div>
                                     <div><span className='sub-title'><FormattedMessage id="homeheader.findproperty" /> </span></div>
                                 </a>
-
                             </div>
                             <div className='child-content'>
                                 <a className='child-content-link' href='/'>
                                     <div><b><FormattedMessage id="homeheader.project" /></b></div>
                                     <div><span className='sub-title'><FormattedMessage id="homeheader.findproject" /></span></div>
                                 </a>
-
                             </div>
                             <div className='child-content'>
                                 <a className='child-content-link' href='/'>
                                     <div><b><FormattedMessage id="homeheader.news" /></b></div>
                                     <div><span className='sub-title'><FormattedMessage id="homeheader.newproperty" /> </span></div>
                                 </a>
-
                             </div>
                             <div className='child-content'>
                                 <a className='child-content-link' href='/'><div><b><FormattedMessage id="homeheader.contact" /></b></div>
                                     <div><span className='sub-title'><FormattedMessage id="homeheader.contactconsultant" /></span></div></a>
-
                             </div>
                         </div>
                         <div className='right-content'>
                             <div className='support'>
                                 <a href='/'> <i className="fas fa-question"></i><FormattedMessage id="homeheader.support" /> </a>
-
                             </div>
 
                             <div className='flag'>
                                 <div className={language === LANGUAGES.VI ? "language-vi active" : "language-vi"}><span onClick={() => this.changeLanguage(LANGUAGES.VI)}>VN</span></div>
                                 <div className={language === LANGUAGES.EN ? "language-en active" : "language-en"}><span onClick={() => this.changeLanguage(LANGUAGES.EN)}>EN</span></div>
-
                             </div>
                         </div>
                     </div>
@@ -102,7 +95,6 @@ class HomeHeader extends Component {
                                     </div>
                                     <div className='option-child-text'><FormattedMessage id="banner.banneroption3" /></div>
                                 </a>
-
                             </div>
                             <div className='option-child-item'>
                                 <a href='/' className='option-child-item-link'>
@@ -111,7 +103,6 @@ class HomeHeader extends Component {
                                     </div>
                                     <div className='option-child-text'><FormattedMessage id="banner.banneroption4" /></div>
                                 </a>
-
                             </div>
                             <div className='option-child-item'>
                                 <a href='/' className='option-child-item-link'>
@@ -133,12 +124,9 @@ class HomeHeader extends Component {
                         </div>
                     </div>
                 </div>
-
             </React.Fragment>
-
         );
     }
-
 }
 
 const mapStateToProps = state => {

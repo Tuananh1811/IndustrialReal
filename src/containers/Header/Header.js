@@ -13,8 +13,8 @@ class Header extends Component {
         //fire redux event:action
     }
     render() {
-        const { processLogout } = this.props;
-        let language = this.props.language;
+        const { processLogout, language, userInfo } = this.props;
+        console.log("check", userInfo);
         return (
             <div className="header-container">
                 {/* thanh navigator */}
@@ -24,7 +24,10 @@ class Header extends Component {
 
                 {/* nút logout */}
                 <div className=" header-top-right"  >
-                    <span className='welcome'><FormattedMessage id="homeheader.welcome"></FormattedMessage>, <strong>Admin</strong></span>
+                    <span className='welcome'>
+                        <FormattedMessage id="homeheader.welcome"></FormattedMessage>,
+                        <strong>{userInfo && userInfo ? userInfo.firstName : ""}</strong>
+                    </span>
                     <div className="languages">
                         <span className={language === LANGUAGES.VI ? "language-vi active" : "language-vi"}
                             onClick={() => this.changeLanguage(LANGUAGES.VI)}>
@@ -47,13 +50,14 @@ class Header extends Component {
 const mapStateToProps = state => {
     return {
         isLoggedIn: state.user.isLoggedIn,
+        userInfo: state.user.userInfo,
         language: state.app.language,
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
-         processLogout: () => dispatch(actions.processLogout()),
+        processLogout: () => dispatch(actions.processLogout()),
         changeLanguageAppRedux: (language) => dispatch(actions.changeLanguageApp(language))
     };
 };
