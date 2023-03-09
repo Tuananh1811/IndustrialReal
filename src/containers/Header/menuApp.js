@@ -24,4 +24,26 @@ export const adminMenu = [
 
         ]
     },
+    { //quản lý dự án
+        name: 'menu.admin.project',
+        menus: [
+            {
+                name: 'menu.admin.manage-project', link: '/system/manage-project'
+
+            },
+            
+
+        ]
+    },
+    { //quản lý phòng ban
+        name: 'menu.admin.department',
+        menus: [
+            {
+                name: 'menu.admin.manage-department', link: '/system/manage-department'
+
+            },
+            
+
+        ]
+    },
 ];

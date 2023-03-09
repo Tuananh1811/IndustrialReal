@@ -62,7 +62,13 @@
         "admin":{
             "manage-user":"Manage user",
             "manage-employee":"Manage employee",
-            "manage-admin":"Manage admin"
+            "manage-admin":"Manage admin",
+            "crud":"CRUD user",
+            "crud-redux":"CRUD Redux",
+            "project":"Project",
+            "manage-project":"Manage project",
+            "department":"Department",
+            "manage-department":"Manage department"
 
         }
     }

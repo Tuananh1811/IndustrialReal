@@ -60,7 +60,11 @@
             "manage-employee":"Quản lý nhân viên",
             "manage-admin":"Quản lý admin",
             "crud":"CRUD user",
-            "crud-redux":"CRUD Redux"
+            "crud-redux":"CRUD Redux",
+            "project":"Dự án",
+            "manage-project":"Quản lý dự án",
+            "department":"Phòng ban",
+            "manage-department":"Quản lý phòng ban"
 
         }
     }
