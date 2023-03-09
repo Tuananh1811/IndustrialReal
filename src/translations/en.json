@@ -9,68 +9,53 @@
         "contact": "Contact",
         "contactconsultant": "Contact a consultant",
         "support": "Support",
-        "welcome":"Welcome"
+        "welcome": "Welcome"
     },
-    "banner":{
-        "title1":"Find your next industrial property",
-        "title2":"Commercial & development land",
-        "banneroption1":"Apartment",
-         "banneroption2":"Industrial land",
-         "banneroption3":"Factory lease",
-         "banneroption4":"Project",
-         "banneroption5":"Apartment",
-         "banneroption6":"Apartment"
+    "banner": {
+        "title1": "Find your next industrial property",
+        "title2": "Commercial & development land",
+        "banneroption1": "Apartment",
+        "banneroption2": "Industrial land",
+        "banneroption3": "Factory lease",
+        "banneroption4": "Project",
+        "banneroption5": "Apartment",
+        "banneroption6": "Apartment"
     },
     "titleSlide": {
         "latestproject": "latest project",
         "FeaturedRealEstate": "Featured Real Estate",
-        "NewsHome":"business newsletter",
-        "AboutHome":"Media talk about CNCTech"
+        "NewsHome": "business newsletter",
+        "AboutHome": "Media talk about CNCTech"
     },
-    "slide":{
-        "industrialcomplex":"Industrial complex"
-
+    "slide": {
+        "industrialcomplex": "Industrial complex"
     },
-    "slideRealEstate":{
-        "FeaturedRealEstate":"Featured Real Estate"
+    "slideRealEstate": {
+        "FeaturedRealEstate": "Featured Real Estate"
     },
-    "slideNews":{
-        "title":"Top 10 Best Countries to Invest in Post COVID Safely and Affectively"
-
+    "slideNews": {
+        "title": "Top 10 Best Countries to Invest in Post COVID Safely and Affectively"
     },
-    "aboutHomePage":{
-        "decsAbout":"Celebrating 14 years of establishment, CNCTech is honored to be introduced in the Business and Entrepreneurs column of VTV1 channel of Vietnam Television."
+    "aboutHomePage": {
+        "decsAbout": "Celebrating 14 years of establishment, CNCTech is honored to be introduced in the Business and Entrepreneurs column of VTV1 channel of Vietnam Television."
     },
-    "button":{
-        "seemore":"See more",
-        "readarticle":"read article"
-        
+    "button": {
+        "seemore": "See more",
+        "readarticle": "read article"
     },
     "menu": {
-        "system": {
-            "header": "System",
-            "system-administrator": {
-                "header": "System Administrator",
-                "user-manage": "User manage",
-                "user-redux": "Manage user using redux"
-                
-            },
-            "system-parameter": {
-                "header": "System-parameter"
-            }
-        },
-        "admin":{
-            "manage-user":"Manage user",
-            "manage-employee":"Manage employee",
-            "manage-admin":"Manage admin",
-            "crud":"CRUD user",
-            "crud-redux":"CRUD Redux",
-            "project":"Project",
-            "manage-project":"Manage project",
-            "department":"Department",
-            "manage-department":"Manage department"
-
+        "admin": {
+            "manage-user": "Users System",
+            "manage-employee": "Manage employee",
+            "manage-admin": "Manage admin",
+            "crud": "CRUD user",
+            "crud-redux": "CRUD Redux",
+            "project": "Projects",
+            "manage-project": "Manage project",
+            "department": "Department",
+            "manage-department": "Manage department",
+            "post": "News",
+            "manage-post": "Manage news"
         }
     }
-   
 }

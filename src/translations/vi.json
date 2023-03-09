@@ -44,28 +44,18 @@
         "decsAbout": "Kỷ niệm 14 năm ngày thành lập, CNCTech vinh dự được giới thiệu trong chuyên mục Doanh nghiệp và Doanh nhân kênh VTV1 của Đài Truyền hình Việt Nam."
     },
     "menu": {
-        "system": {
-            "header": "Hệ thống",
-            "system-administrator": {
-                "header": "Quản trị hệ thống",
-                "user-manage": "Quản lý người sử dụng",
-                "user-redux": "Quản lý người dùng redux"
-            },
-            "system-parameter": {
-                "header": "Tham số hệ thống"
-            }
-        },
-        "admin":{
-            "manage-user":"Quản lý người dùng",
-            "manage-employee":"Quản lý nhân viên",
-            "manage-admin":"Quản lý admin",
-            "crud":"CRUD user",
-            "crud-redux":"CRUD Redux",
-            "project":"Dự án",
-            "manage-project":"Quản lý dự án",
-            "department":"Phòng ban",
-            "manage-department":"Quản lý phòng ban"
-
+        "admin": {
+            "manage-user": "Quản lý người dùng",
+            "manage-employee": "Quản lý nhân viên",
+            "manage-admin": "Quản lý admin",
+            "crud": "CRUD user",
+            "crud-redux": "CRUD Redux",
+            "project": "Dự án",
+            "manage-project": "Quản lý dự án",
+            "department": "Phòng ban",
+            "manage-department": "Quản lý phòng ban",
+            "post": "Bài đăng",
+            "manage-post": "Quản lý bài đăng"
         }
     }
 }

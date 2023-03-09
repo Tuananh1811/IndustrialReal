@@ -31,15 +31,24 @@ export const adminMenu = [
                 name: 'menu.admin.manage-project', link: '/system/manage-project'
 
             },
-            
-
         ]
     },
     { //quản lý phòng ban
         name: 'menu.admin.department',
         menus: [
             {
-                name: 'menu.admin.manage-department', link: '/system/manage-department'
+                name: 'menu.admin.manage-department', link: '/system/manage-department' 
+
+            },
+            
+
+        ]
+    },
+    { //quản lý tin tức
+        name: 'menu.admin.post',
+        menus: [
+            {
+                name: 'menu.admin.manage-post', link: '/system/manage-post' 
 
             },
             
