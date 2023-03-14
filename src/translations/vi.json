@@ -57,5 +57,25 @@
             "post": "Bài đăng",
             "manage-post": "Quản lý bài đăng"
         }
+    },
+    "manage-user":{
+        "add": "Thêm mới người dùng",
+        "email": "Email",
+        "password": "Mật khẩu",
+        "firstname": "Tên",
+        "lastname": "Họ",
+        "address": "Địa chỉ",
+        "phonenumber": "Số điện thoại",
+        "gender": "Giới tính",
+        "male": "Nam",
+        "female": "Nữ",
+        "genderOther": "Giới tính khác",
+        "position": "Chức danh",
+        "role":"Vai trò",
+        "image":"Ảnh đại diện",
+        "save":"Lưu người dùng"
+        
+
+        
     }
 }
