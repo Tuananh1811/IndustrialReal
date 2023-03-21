@@ -9,21 +9,30 @@ class UserRedux extends Component {
         super(props);
         this.state = {
             genderArr: [],
-            positionArr: []
+            positionArr: [],
+            roleArr: []
         }
     }
     async componentDidMount() {
         try {
             let resGender = await getAllCodeService('gender');
             let resPosition = await getAllCodeService('position');
+            let resRoleID = await getAllCodeService('role');
             if (resGender && resGender.errCode === 0) {
                 this.setState({
                     genderArr: resGender.data
                 })
             }
+
+
             if (resPosition && resPosition.errCode === 0) {
                 this.setState({
                     positionArr: resPosition.data
+                })
+            }
+            if (resRoleID && resRoleID.errCode === 0) {
+                this.setState({
+                    roleArr: resRoleID.data
                 })
             }
 
@@ -35,6 +44,7 @@ class UserRedux extends Component {
     render() {
         let genders = this.state.genderArr;
         let positions = this.state.positionArr;
+        let roles = this.state.roleArr;
         let language = this.props.language;
         return (
             <div className='user-redux-container'>
@@ -106,8 +116,13 @@ class UserRedux extends Component {
                                     <div className="form-group col-md-3">
                                         <label ><FormattedMessage id="manage-user.role" /></label>
                                         <select className="form-control form-select ">
-                                            <option selected>options</option>
-                                            <option>...</option>
+                                            {
+                                                roles && roles.length > 0 && roles.map((item, index) => {
+                                                    return (
+                                                        <option key={index}>{language === LANGUAGES.VI ? item.valueVi : item.valueEn}</option>
+                                                    )
+                                                })
+                                            }
                                         </select>
                                     </div>
                                     <div className="form-group col-3">
@@ -122,7 +137,6 @@ class UserRedux extends Component {
                     </div>
                 </div>
             </div>
-
         )
     }
 
