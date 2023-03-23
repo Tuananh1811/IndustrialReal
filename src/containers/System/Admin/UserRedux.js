@@ -43,11 +43,21 @@ class UserRedux extends Component {
         //     console.log(e);
         // }
     }
+    componentDidUpdate(prevProps,prevState,snapshot){ 
+        if(prevProps.genderRedux!== this.props.genderRedux){
+            this.setState({
+                genderArr:this.props.genderRedux
+            })
+          
+        }
+    }
     render() {
         let genders = this.state.genderArr;
         let positions = this.state.positionArr;
         let roles = this.state.roleArr;
         let language = this.props.language;
+
+        console.log("check props from redux", this.props.genderRedux);
         return (
             <div className='user-redux-container'>
                 <div className='title my-3'>
@@ -147,6 +157,7 @@ class UserRedux extends Component {
 const mapStateToProps = state => {
     return {
         language: state.app.language,
+        genderRedux: state.admin.genders
     };
 };
 
@@ -154,7 +165,8 @@ const mapDispatchToProps = dispatch => {
     return {
         // processLogout: () => dispatch(actions.processLogout()),
         // changeLanguageAppRedux: (language) => dispatch(actions.changeLanguageApp(language))
-        getGenderStart: () => dispatch(actions.fetchGenderStart())
+        getGenderStart: () => dispatch(actions.fetchGenderStart()),
+
     };
 };
 
