@@ -25,7 +25,7 @@ class UserRedux extends Component {
         //             genderArr: resGender.data
         //         })
         //     }
-
+           
 
         //     if (resPosition && resPosition.errCode === 0) {
         //         this.setState({
@@ -57,7 +57,7 @@ class UserRedux extends Component {
         let roles = this.state.roleArr;
         let language = this.props.language;
 
-        console.log("check props from redux", this.props.genderRedux);
+       // console.log("check props from redux", this.props.genderRedux);
         return (
             <div className='user-redux-container'>
                 <div className='title my-3'>

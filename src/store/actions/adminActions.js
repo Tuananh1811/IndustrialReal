@@ -17,7 +17,7 @@ export const fetchGenderStart =  () => { //==get
             }
         } catch (e) {
            dispatch(fetchGenderFailded()) ;
-            console.log("fetchGenderStart err: ", e);
+          //  console.log("fetchGenderStart err: ", e);
         }
     }
     
