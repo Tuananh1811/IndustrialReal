@@ -17,31 +17,8 @@ class UserRedux extends Component {
     async componentDidMount() {
         this.props.getGenderStart();
         this.props.getPositionStart();
-this.props.getRoleStart();
-        //     let resGender = await getAllCodeService('gender');
-        //     let resPosition = await getAllCodeService('position');
-        //     let resRoleID = await getAllCodeService('role');
-        //     if (resGender && resGender.errCode === 0) {
-        //         this.setState({
-        //             genderArr: resGender.data
-        //         })
-        //     }
-
-        //     if (resPosition && resPosition.errCode === 0) {
-        //         this.setState({
-        //             positionArr: resPosition.data
-        //         })
-        //     }
-        //     if (resRoleID && resRoleID.errCode === 0) {
-        //         this.setState({
-        //             roleArr: resRoleID.data
-        //         })
-        //     }
-
-        // }
-        // catch (e) {
-        //     console.log(e);
-        // }
+        this.props.getRoleStart();
+       
     }
     componentDidUpdate(prevProps, prevState, snapshot) {
         if (prevProps.genderRedux !== this.props.genderRedux) {
@@ -50,14 +27,14 @@ this.props.getRoleStart();
             })
 
         }
-        if(prevProps.positionRedux!== this.props.positionRedux){
+        if (prevProps.positionRedux !== this.props.positionRedux) {
             this.setState({
-                positionArr:this.props.positionRedux
+                positionArr: this.props.positionRedux
             })
         }
-        if(prevProps.roleRedux!==this.props.roleRedux){
+        if (prevProps.roleRedux !== this.props.roleRedux) {
             this.setState({
-                roleArr:this.props.roleRedux
+                roleArr: this.props.roleRedux
             })
         }
     }
@@ -67,7 +44,6 @@ this.props.getRoleStart();
         let roles = this.state.roleArr;
         let language = this.props.language;
 
-        // console.log("check props from redux", this.props.genderRedux);
         return (
             <div className='user-redux-container'>
                 <div className='title my-3'>
@@ -149,7 +125,8 @@ this.props.getRoleStart();
                                     </div>
                                     <div className="form-group col-3">
                                         <label > <FormattedMessage id="manage-user.image" /></label>
-                                        <input type="text" className="form-control" placeholder="" />
+                                        {/* <input type="text" className="form-control" placeholder="" /> */}
+                                        
                                     </div>
                                 </div>
                                 <br></br>
@@ -161,15 +138,13 @@ this.props.getRoleStart();
             </div>
         )
     }
-
 }
-
 const mapStateToProps = state => {
     return {
         language: state.app.language,
         genderRedux: state.admin.genders,
-        positionRedux:state.admin.positions,
-        roleRedux:state.admin.roles
+        positionRedux: state.admin.positions,
+        roleRedux: state.admin.roles
     };
 };
 
@@ -179,7 +154,7 @@ const mapDispatchToProps = dispatch => {
         // changeLanguageAppRedux: (language) => dispatch(actions.changeLanguageApp(language))
         getGenderStart: () => dispatch(actions.fetchGenderStart()),
         getPositionStart: () => dispatch(actions.fetchPositionStart()),
-        getRoleStart:()=>dispatch(actions.fetchRoleStart())
+        getRoleStart: () => dispatch(actions.fetchRoleStart())
 
     };
 };

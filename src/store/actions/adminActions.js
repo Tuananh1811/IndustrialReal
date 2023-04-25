@@ -1,10 +1,6 @@
 import actionTypes from './actionTypes';
 import { getAllCodeService } from '../../services/userService';
 
-// export const fetchGenderStart = () => ({ //==get
-//     type: actionTypes.FETCH_GENDER_START
-// })
-
 export const fetchGenderStart = () => { //==get
     return async (dispatch, getState) => {
         try {
