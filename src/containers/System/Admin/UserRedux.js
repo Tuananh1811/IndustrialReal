@@ -16,7 +16,8 @@ class UserRedux extends Component {
     }
     async componentDidMount() {
         this.props.getGenderStart();
-        // try {
+        this.props.getPositionStart();
+this.props.getRoleStart();
         //     let resGender = await getAllCodeService('gender');
         //     let resPosition = await getAllCodeService('position');
         //     let resRoleID = await getAllCodeService('role');
@@ -25,7 +26,6 @@ class UserRedux extends Component {
         //             genderArr: resGender.data
         //         })
         //     }
-           
 
         //     if (resPosition && resPosition.errCode === 0) {
         //         this.setState({
@@ -43,12 +43,22 @@ class UserRedux extends Component {
         //     console.log(e);
         // }
     }
-    componentDidUpdate(prevProps,prevState,snapshot){ 
-        if(prevProps.genderRedux!== this.props.genderRedux){
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (prevProps.genderRedux !== this.props.genderRedux) {
             this.setState({
-                genderArr:this.props.genderRedux
+                genderArr: this.props.genderRedux
             })
-          
+
+        }
+        if(prevProps.positionRedux!== this.props.positionRedux){
+            this.setState({
+                positionArr:this.props.positionRedux
+            })
+        }
+        if(prevProps.roleRedux!==this.props.roleRedux){
+            this.setState({
+                roleArr:this.props.roleRedux
+            })
         }
     }
     render() {
@@ -57,7 +67,7 @@ class UserRedux extends Component {
         let roles = this.state.roleArr;
         let language = this.props.language;
 
-       // console.log("check props from redux", this.props.genderRedux);
+        // console.log("check props from redux", this.props.genderRedux);
         return (
             <div className='user-redux-container'>
                 <div className='title my-3'>
@@ -157,7 +167,9 @@ class UserRedux extends Component {
 const mapStateToProps = state => {
     return {
         language: state.app.language,
-        genderRedux: state.admin.genders
+        genderRedux: state.admin.genders,
+        positionRedux:state.admin.positions,
+        roleRedux:state.admin.roles
     };
 };
 
@@ -166,6 +178,8 @@ const mapDispatchToProps = dispatch => {
         // processLogout: () => dispatch(actions.processLogout()),
         // changeLanguageAppRedux: (language) => dispatch(actions.changeLanguageApp(language))
         getGenderStart: () => dispatch(actions.fetchGenderStart()),
+        getPositionStart: () => dispatch(actions.fetchPositionStart()),
+        getRoleStart:()=>dispatch(actions.fetchRoleStart())
 
     };
 };
