@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { getAllCodeService } from '../../../services/userService';
 import { LANGUAGES } from '../../../utils';
 import * as actions from "../../../store/actions";
+import './UserRedux.scss';
 class UserRedux extends Component {
 
     constructor(props) {
@@ -11,14 +12,15 @@ class UserRedux extends Component {
         this.state = {
             genderArr: [],
             positionArr: [],
-            roleArr: []
+            roleArr: [],
+            previewImageURL:''
         }
     }
     async componentDidMount() {
         this.props.getGenderStart();
         this.props.getPositionStart();
         this.props.getRoleStart();
-       
+
     }
     componentDidUpdate(prevProps, prevState, snapshot) {
         if (prevProps.genderRedux !== this.props.genderRedux) {
@@ -38,12 +40,24 @@ class UserRedux extends Component {
             })
         }
     }
+    handleOnchangeImage =(event)=>{
+        let data=event.target.files;
+        let file=data[0];
+        if(file){
+            let objectUrl=URL.createObjectURL(file); //api html
+            this.setState({
+                previewImageURL:objectUrl
+            })
+        }
+     
+
+    }
     render() {
         let genders = this.state.genderArr;
         let positions = this.state.positionArr;
         let roles = this.state.roleArr;
         let language = this.props.language;
-
+        
         return (
             <div className='user-redux-container'>
                 <div className='title my-3'>
@@ -125,8 +139,19 @@ class UserRedux extends Component {
                                     </div>
                                     <div className="form-group col-3">
                                         <label > <FormattedMessage id="manage-user.image" /></label>
-                                        {/* <input type="text" className="form-control" placeholder="" /> */}
-                                        
+                                        <div className='preview-img-container'>
+                                            <input
+                                                id='previewImg'
+                                                type='file'
+                                                hidden
+                                                onChange={(event) => this.handleOnchangeImage(event)}
+                                            />
+                                            <label className='lable-upload' htmlFor='previewImg'>Tải ảnh <i className="fas fa-upload"></i></label>
+                                            <div className='preview-image' style={{backgroundImage:`url(${this.state.previewImageURL})`}}>
+
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                                 <br></br>
