@@ -56,6 +56,7 @@ class UserRedux extends Component {
 
     }
     openPreviewImage = () => {
+        if (!this.state.previewImageURL) return;
         this.setState({
             isOpen: true
         })
