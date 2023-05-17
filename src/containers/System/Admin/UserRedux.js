@@ -155,7 +155,7 @@ class UserRedux extends Component {
                                                 hidden
                                                 onChange={(event) => this.handleOnchangeImage(event)}
                                             />
-                                            <label className='lable-upload' htmlFor='previewImg'>Tải ảnh <i className="fas fa-upload"></i></label>
+                                            <label className='lable-upload' htmlFor='previewImg'><FormattedMessage id="manage-user.UploadImage"/> <i className="fas fa-upload"></i></label>
                                             <div className='preview-image'
                                                 style={{ backgroundImage: `url(${this.state.previewImageURL})` }}
                                                 onClick={() => this.openPreviewImage()}
@@ -166,7 +166,9 @@ class UserRedux extends Component {
                                     </div>
                                 </div>
                                 <br></br>
-                                <button type="submit" className="btn btn-primary"><FormattedMessage id="manage-user.save" /></button>
+                                <button type="submit" className="btn btn-primary"
+                                
+                                ><FormattedMessage id="manage-user.save" /></button>
                             </form>
                         </div>
                     </div>

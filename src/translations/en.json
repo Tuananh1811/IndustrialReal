@@ -73,7 +73,8 @@
         "position": "Position",
         "role":"RoleID",
         "image":"Avatar",
-        "save":"Save"
+        "save":"Save",
+        "UploadImage":"Upload Image"
 
         
     }
