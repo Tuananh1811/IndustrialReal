@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
-// import { getAllCodeService } from '../../../services/userService';
 import { LANGUAGES } from '../../../utils';
 import * as actions from "../../../store/actions";
 import './UserRedux.scss';
@@ -18,7 +17,6 @@ class UserRedux extends Component {
             roleArr: [],
             previewImageURL: '',
             isOpen: false,
-
             email: "",
             password: "",
             firstName: "",
@@ -36,6 +34,7 @@ class UserRedux extends Component {
         this.props.getGenderStart();
         this.props.getPositionStart();
         this.props.getRoleStart();
+        this.props.createNewUser();
 
     }
     componentDidUpdate(prevProps, prevState, snapshot) {
@@ -81,6 +80,7 @@ class UserRedux extends Component {
             isOpen: true
         })
     }
+
     onChangeInput = (event, id) => {
         let copyState = { ...this.state };
         copyState[id] = event.target.value;
@@ -88,28 +88,43 @@ class UserRedux extends Component {
             ...copyState
         })
     }
+
     handleSaveUser = () => {
-        this.checkValidateInput();
-        console.log("check save user", this.state)
+        let isValid = this.checkValidateInput();
+        if (isValid === false) return;
+        //fire redux action
+        this.props.createNewUser({
+            email: this.state.email,
+            password: this.state.password,
+            firstName: this.state.firstName,
+            lastName: this.state.lastName,
+            phoneNumber: this.state.phoneNumber,
+            address: this.state.address,
+            gender: this.state.gender,
+            roleId: this.state.role,
+            positionId: this.state.position
+        })
     }
+
     checkValidateInput = () => {
         let ivalid = true;
         let arrChecks = ['email', 'password', 'firstName', 'lastName', 'address', 'phoneNumber']
-        for (let i = 0; i <= arrChecks.length; i++) {
+        for (let i = 0; i < arrChecks.length; i++) {
             if (!this.state[arrChecks[i]]) {
                 ivalid = false;
-                alert("this input is required: "+ arrChecks[i]);
+                alert("this input is required: " + arrChecks[i]);
                 break;
             }
         }
         return ivalid;
     }
+
     render() {
         let genders = this.state.genderArr;
         let positions = this.state.positionArr;
         let roles = this.state.roleArr;
         let language = this.props.language;
-        let { email, password, firstName, lastName, address, phoneNumber} = this.state;
+        let { email, password, firstName, lastName, address, phoneNumber } = this.state;
         return (
             <div className='user-redux-container'>
                 <div className='title my-3'>
@@ -261,7 +276,8 @@ const mapDispatchToProps = dispatch => {
         // changeLanguageAppRedux: (language) => dispatch(actions.changeLanguageApp(language))
         getGenderStart: () => dispatch(actions.fetchGenderStart()),
         getPositionStart: () => dispatch(actions.fetchPositionStart()),
-        getRoleStart: () => dispatch(actions.fetchRoleStart())
+        getRoleStart: () => dispatch(actions.fetchRoleStart()),
+        createNewUser: (data) => dispatch(actions.createNewUser(data))
 
     };
 };

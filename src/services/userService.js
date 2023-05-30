@@ -8,6 +8,7 @@ const getAllUsers =(inputId)=>{
     return axios.get(`/api/get-all-users?id=${inputId}`);
 }
 const createNewUserService=(data)=>{
+    console.log("check create user service: ",data);
     return axios.post('/api/create-new-user',data)
 }
 const deleteUserService=(userId)=>{
