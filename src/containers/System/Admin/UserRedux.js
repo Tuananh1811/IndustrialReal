@@ -35,6 +35,7 @@ class UserRedux extends Component {
         this.props.getPositionStart();
         this.props.getRoleStart();
         this.props.createNewUser();
+      
 
     }
     componentDidUpdate(prevProps, prevState, snapshot) {
@@ -188,7 +189,8 @@ class UserRedux extends Component {
                                 <div className="row my-2">
                                     <div className="form-group col-md-3">
                                         <label > <FormattedMessage id="manage-user.gender" /></label>
-                                        <select className="form-control form-select ">
+                                        <select className="form-control form-select " 
+                                        onChange={(event)=>{this.onChangeInput(event,"gender")}}>
                                             {
                                                 genders && genders.length > 0 && genders.map((item, index) => {
                                                     return (
@@ -202,7 +204,7 @@ class UserRedux extends Component {
                                     </div>
                                     <div className="form-group col-md-3">
                                         <label > <FormattedMessage id="manage-user.position" /></label>
-                                        <select className="form-control form-select ">
+                                        <select className="form-control form-select " onChange={(event)=>{this.onChangeInput(event,"position")}}>
                                             {
                                                 positions && positions.length > 0 && positions.map((item, index) => {
                                                     return (
@@ -214,7 +216,7 @@ class UserRedux extends Component {
                                     </div>
                                     <div className="form-group col-md-3">
                                         <label ><FormattedMessage id="manage-user.role" /></label>
-                                        <select className="form-control form-select ">
+                                        <select className="form-control form-select " onChange={(event)=>{this.onChangeInput(event,"role")}}>
                                             {
                                                 roles && roles.length > 0 && roles.map((item, index) => {
                                                     return (

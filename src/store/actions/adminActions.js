@@ -82,7 +82,7 @@ export const createNewUser = (data) => {
     return async (dispatch, getState) => {
         try {
             let res = await createNewUserService(data);
-            console.log("check data user create", res);
+           
             if (res && res.errCode === 0) {
                 dispatch(saveUserSuccess());
             } else {
@@ -90,6 +90,7 @@ export const createNewUser = (data) => {
             }
         } catch (e) {
             dispatch(saveUserFailed());
+            console.log("error",e);
 
         }
     }
